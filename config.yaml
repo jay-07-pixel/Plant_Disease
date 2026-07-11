@@ -1,0 +1,27 @@
+# PlantDiseaseAI — project configuration
+
+project:
+  name: PlantDiseaseAI
+  version: "0.1.0"
+
+paths:
+  datasets:
+    raw: datasets/raw
+    external: datasets/external
+    interim: datasets/interim
+    processed: datasets/processed
+  saved_models: saved_models
+  logs: logs
+  reports: reports
+  experiments: experiments
+
+training:
+  seed: 42
+  batch_size: 32
+  num_epochs: 50
+  learning_rate: 0.001
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+  debug: false
