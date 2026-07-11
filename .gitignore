@@ -32,7 +32,8 @@ htmlcov/
 .tox/
 
 # Logs
-logs/
+logs/*
+!logs/.gitkeep
 *.log
 
 # Data (large files — keep structure via .gitkeep)
@@ -48,9 +49,8 @@ saved_models/*
 experiments/*
 !experiments/.gitkeep
 
-# Reports
-reports/*
-!reports/.gitkeep
+# Reports (track pipeline outputs; datasets remain excluded)
+# reports/ is versioned intentionally
 
 # OS
 .DS_Store

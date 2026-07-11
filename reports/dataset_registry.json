@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-07-10T13:04:36.056648+00:00",
+  "datasets": {
+    "plantdoc": {
+      "dataset_name": "plantdoc",
+      "version": "2026-07-10T12:48:10.607864+00:00|925354198",
+      "number_of_files": 2552,
+      "extraction_date": "2026-07-10T13:03:22.860179+00:00",
+      "extraction_path": "datasets/external/plantdoc"
+    },
+    "plantvillage": {
+      "dataset_name": "plantvillage",
+      "version": "2026-07-10T12:35:02.649144+00:00|857351099",
+      "number_of_files": 54305,
+      "extraction_date": "2026-07-10T13:04:36.056648+00:00",
+      "extraction_path": "datasets/external/plantvillage"
+    }
+  }
+}

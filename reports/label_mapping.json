@@ -1,0 +1,1427 @@
+{
+  "generated_at": "2026-07-11T03:51:51.286406+00:00",
+  "source": "reports\\dataset_statistics.json",
+  "summary": {
+    "datasets": 2,
+    "total_raw_labels": 65,
+    "mapped_labels": 65,
+    "canonical_labels": 43,
+    "unknown_labels": 0,
+    "ambiguous_labels": 0,
+    "duplicate_mappings": 22,
+    "unmapped_labels": 0
+  },
+  "canonical_labels": [
+    {
+      "plant": "Apple",
+      "disease": "Apple Scab",
+      "is_healthy": false,
+      "canonical_key": "apple|apple_scab"
+    },
+    {
+      "plant": "Apple",
+      "disease": "Black Rot",
+      "is_healthy": false,
+      "canonical_key": "apple|black_rot"
+    },
+    {
+      "plant": "Apple",
+      "disease": "Cedar Apple Rust",
+      "is_healthy": false,
+      "canonical_key": "apple|cedar_apple_rust"
+    },
+    {
+      "plant": "Apple",
+      "disease": "Healthy",
+      "is_healthy": true,
+      "canonical_key": "apple|healthy"
+    },
+    {
+      "plant": "Apple",
+      "disease": "Rust",
+      "is_healthy": false,
+      "canonical_key": "apple|rust"
+    },
+    {
+      "plant": "Blueberry",
+      "disease": "Healthy",
+      "is_healthy": true,
+      "canonical_key": "blueberry|healthy"
+    },
+    {
+      "plant": "Cherry",
+      "disease": "Healthy",
+      "is_healthy": true,
+      "canonical_key": "cherry|healthy"
+    },
+    {
+      "plant": "Cherry",
+      "disease": "Powdery Mildew",
+      "is_healthy": false,
+      "canonical_key": "cherry|powdery_mildew"
+    },
+    {
+      "plant": "Corn",
+      "disease": "Blight",
+      "is_healthy": false,
+      "canonical_key": "corn|blight"
+    },
+    {
+      "plant": "Corn",
+      "disease": "Cercospora Leaf Spot Gray Leaf Spot",
+      "is_healthy": false,
+      "canonical_key": "corn|cercospora_leaf_spot_gray_leaf_spot"
+    },
+    {
+      "plant": "Corn",
+      "disease": "Common Rust",
+      "is_healthy": false,
+      "canonical_key": "corn|common_rust"
+    },
+    {
+      "plant": "Corn",
+      "disease": "Gray Leaf Spot",
+      "is_healthy": false,
+      "canonical_key": "corn|gray_leaf_spot"
+    },
+    {
+      "plant": "Corn",
+      "disease": "Healthy",
+      "is_healthy": true,
+      "canonical_key": "corn|healthy"
+    },
+    {
+      "plant": "Corn",
+      "disease": "Northern Leaf Blight",
+      "is_healthy": false,
+      "canonical_key": "corn|northern_leaf_blight"
+    },
+    {
+      "plant": "Corn",
+      "disease": "Rust",
+      "is_healthy": false,
+      "canonical_key": "corn|rust"
+    },
+    {
+      "plant": "Grape",
+      "disease": "Black Rot",
+      "is_healthy": false,
+      "canonical_key": "grape|black_rot"
+    },
+    {
+      "plant": "Grape",
+      "disease": "Esca (Black Measles)",
+      "is_healthy": false,
+      "canonical_key": "grape|esca_(black_measles)"
+    },
+    {
+      "plant": "Grape",
+      "disease": "Healthy",
+      "is_healthy": true,
+      "canonical_key": "grape|healthy"
+    },
+    {
+      "plant": "Grape",
+      "disease": "Leaf Blight (Isariopsis Leaf Spot)",
+      "is_healthy": false,
+      "canonical_key": "grape|leaf_blight_(isariopsis_leaf_spot)"
+    },
+    {
+      "plant": "Orange",
+      "disease": "Huanglongbing (Citrus Greening)",
+      "is_healthy": false,
+      "canonical_key": "orange|huanglongbing_(citrus_greening)"
+    },
+    {
+      "plant": "Peach",
+      "disease": "Bacterial Spot",
+      "is_healthy": false,
+      "canonical_key": "peach|bacterial_spot"
+    },
+    {
+      "plant": "Peach",
+      "disease": "Healthy",
+      "is_healthy": true,
+      "canonical_key": "peach|healthy"
+    },
+    {
+      "plant": "Pepper",
+      "disease": "Bacterial Spot",
+      "is_healthy": false,
+      "canonical_key": "pepper|bacterial_spot"
+    },
+    {
+      "plant": "Pepper",
+      "disease": "Healthy",
+      "is_healthy": true,
+      "canonical_key": "pepper|healthy"
+    },
+    {
+      "plant": "Pepper",
+      "disease": "Leaf Spot",
+      "is_healthy": false,
+      "canonical_key": "pepper|leaf_spot"
+    },
+    {
+      "plant": "Potato",
+      "disease": "Early Blight",
+      "is_healthy": false,
+      "canonical_key": "potato|early_blight"
+    },
+    {
+      "plant": "Potato",
+      "disease": "Healthy",
+      "is_healthy": true,
+      "canonical_key": "potato|healthy"
+    },
+    {
+      "plant": "Potato",
+      "disease": "Late Blight",
+      "is_healthy": false,
+      "canonical_key": "potato|late_blight"
+    },
+    {
+      "plant": "Raspberry",
+      "disease": "Healthy",
+      "is_healthy": true,
+      "canonical_key": "raspberry|healthy"
+    },
+    {
+      "plant": "Soybean",
+      "disease": "Healthy",
+      "is_healthy": true,
+      "canonical_key": "soybean|healthy"
+    },
+    {
+      "plant": "Squash",
+      "disease": "Powdery Mildew",
+      "is_healthy": false,
+      "canonical_key": "squash|powdery_mildew"
+    },
+    {
+      "plant": "Strawberry",
+      "disease": "Healthy",
+      "is_healthy": true,
+      "canonical_key": "strawberry|healthy"
+    },
+    {
+      "plant": "Strawberry",
+      "disease": "Leaf Scorch",
+      "is_healthy": false,
+      "canonical_key": "strawberry|leaf_scorch"
+    },
+    {
+      "plant": "Tomato",
+      "disease": "Bacterial Spot",
+      "is_healthy": false,
+      "canonical_key": "tomato|bacterial_spot"
+    },
+    {
+      "plant": "Tomato",
+      "disease": "Early Blight",
+      "is_healthy": false,
+      "canonical_key": "tomato|early_blight"
+    },
+    {
+      "plant": "Tomato",
+      "disease": "Healthy",
+      "is_healthy": true,
+      "canonical_key": "tomato|healthy"
+    },
+    {
+      "plant": "Tomato",
+      "disease": "Late Blight",
+      "is_healthy": false,
+      "canonical_key": "tomato|late_blight"
+    },
+    {
+      "plant": "Tomato",
+      "disease": "Leaf Mold",
+      "is_healthy": false,
+      "canonical_key": "tomato|leaf_mold"
+    },
+    {
+      "plant": "Tomato",
+      "disease": "Septoria Leaf Spot",
+      "is_healthy": false,
+      "canonical_key": "tomato|septoria_leaf_spot"
+    },
+    {
+      "plant": "Tomato",
+      "disease": "Spider Mites Two Spotted Spider Mite",
+      "is_healthy": false,
+      "canonical_key": "tomato|spider_mites_two_spotted_spider_mite"
+    },
+    {
+      "plant": "Tomato",
+      "disease": "Target Spot",
+      "is_healthy": false,
+      "canonical_key": "tomato|target_spot"
+    },
+    {
+      "plant": "Tomato",
+      "disease": "Tomato Mosaic Virus",
+      "is_healthy": false,
+      "canonical_key": "tomato|tomato_mosaic_virus"
+    },
+    {
+      "plant": "Tomato",
+      "disease": "Tomato Yellow Leaf Curl Virus",
+      "is_healthy": false,
+      "canonical_key": "tomato|tomato_yellow_leaf_curl_virus"
+    }
+  ],
+  "datasets": {
+    "plantdoc": {
+      "dataset_name": "plantdoc",
+      "total_raw_labels": 27,
+      "mapped_labels": 27,
+      "mappings": [
+        {
+          "raw_label": "Apple Scab Leaf",
+          "dataset_name": "plantdoc",
+          "image_count": 87,
+          "standard_label": {
+            "plant": "Apple",
+            "disease": "Apple Scab",
+            "is_healthy": false,
+            "canonical_key": "apple|apple_scab"
+          },
+          "status": "mapped",
+          "parser": "plantdoc",
+          "notes": null
+        },
+        {
+          "raw_label": "Apple leaf",
+          "dataset_name": "plantdoc",
+          "image_count": 91,
+          "standard_label": {
+            "plant": "Apple",
+            "disease": "Healthy",
+            "is_healthy": true,
+            "canonical_key": "apple|healthy"
+          },
+          "status": "mapped",
+          "parser": "plantdoc",
+          "notes": null
+        },
+        {
+          "raw_label": "Apple rust leaf",
+          "dataset_name": "plantdoc",
+          "image_count": 89,
+          "standard_label": {
+            "plant": "Apple",
+            "disease": "Rust",
+            "is_healthy": false,
+            "canonical_key": "apple|rust"
+          },
+          "status": "mapped",
+          "parser": "plantdoc",
+          "notes": null
+        },
+        {
+          "raw_label": "Bell_pepper leaf",
+          "dataset_name": "plantdoc",
+          "image_count": 61,
+          "standard_label": {
+            "plant": "Pepper",
+            "disease": "Healthy",
+            "is_healthy": true,
+            "canonical_key": "pepper|healthy"
+          },
+          "status": "mapped",
+          "parser": "plantdoc",
+          "notes": null
+        },
+        {
+          "raw_label": "Bell_pepper leaf spot",
+          "dataset_name": "plantdoc",
+          "image_count": 71,
+          "standard_label": {
+            "plant": "Pepper",
+            "disease": "Leaf Spot",
+            "is_healthy": false,
+            "canonical_key": "pepper|leaf_spot"
+          },
+          "status": "mapped",
+          "parser": "plantdoc",
+          "notes": null
+        },
+        {
+          "raw_label": "Blueberry leaf",
+          "dataset_name": "plantdoc",
+          "image_count": 116,
+          "standard_label": {
+            "plant": "Blueberry",
+            "disease": "Healthy",
+            "is_healthy": true,
+            "canonical_key": "blueberry|healthy"
+          },
+          "status": "mapped",
+          "parser": "plantdoc",
+          "notes": null
+        },
+        {
+          "raw_label": "Cherry leaf",
+          "dataset_name": "plantdoc",
+          "image_count": 57,
+          "standard_label": {
+            "plant": "Cherry",
+            "disease": "Healthy",
+            "is_healthy": true,
+            "canonical_key": "cherry|healthy"
+          },
+          "status": "mapped",
+          "parser": "plantdoc",
+          "notes": null
+        },
+        {
+          "raw_label": "Corn Gray leaf spot",
+          "dataset_name": "plantdoc",
+          "image_count": 68,
+          "standard_label": {
+            "plant": "Corn",
+            "disease": "Gray Leaf Spot",
+            "is_healthy": false,
+            "canonical_key": "corn|gray_leaf_spot"
+          },
+          "status": "mapped",
+          "parser": "plantdoc",
+          "notes": null
+        },
+        {
+          "raw_label": "Corn leaf blight",
+          "dataset_name": "plantdoc",
+          "image_count": 192,
+          "standard_label": {
+            "plant": "Corn",
+            "disease": "Blight",
+            "is_healthy": false,
+            "canonical_key": "corn|blight"
+          },
+          "status": "mapped",
+          "parser": "plantdoc",
+          "notes": null
+        },
+        {
+          "raw_label": "Corn rust leaf",
+          "dataset_name": "plantdoc",
+          "image_count": 116,
+          "standard_label": {
+            "plant": "Corn",
+            "disease": "Rust",
+            "is_healthy": false,
+            "canonical_key": "corn|rust"
+          },
+          "status": "mapped",
+          "parser": "plantdoc",
+          "notes": null
+        },
+        {
+          "raw_label": "Peach leaf",
+          "dataset_name": "plantdoc",
+          "image_count": 112,
+          "standard_label": {
+            "plant": "Peach",
+            "disease": "Healthy",
+            "is_healthy": true,
+            "canonical_key": "peach|healthy"
+          },
+          "status": "mapped",
+          "parser": "plantdoc",
+          "notes": null
+        },
+        {
+          "raw_label": "Potato leaf early blight",
+          "dataset_name": "plantdoc",
+          "image_count": 117,
+          "standard_label": {
+            "plant": "Potato",
+            "disease": "Early Blight",
+            "is_healthy": false,
+            "canonical_key": "potato|early_blight"
+          },
+          "status": "mapped",
+          "parser": "plantdoc",
+          "notes": null
+        },
+        {
+          "raw_label": "Potato leaf late blight",
+          "dataset_name": "plantdoc",
+          "image_count": 105,
+          "standard_label": {
+            "plant": "Potato",
+            "disease": "Late Blight",
+            "is_healthy": false,
+            "canonical_key": "potato|late_blight"
+          },
+          "status": "mapped",
+          "parser": "plantdoc",
+          "notes": null
+        },
+        {
+          "raw_label": "Raspberry leaf",
+          "dataset_name": "plantdoc",
+          "image_count": 116,
+          "standard_label": {
+            "plant": "Raspberry",
+            "disease": "Healthy",
+            "is_healthy": true,
+            "canonical_key": "raspberry|healthy"
+          },
+          "status": "mapped",
+          "parser": "plantdoc",
+          "notes": null
+        },
+        {
+          "raw_label": "Soyabean leaf",
+          "dataset_name": "plantdoc",
+          "image_count": 65,
+          "standard_label": {
+            "plant": "Soybean",
+            "disease": "Healthy",
+            "is_healthy": true,
+            "canonical_key": "soybean|healthy"
+          },
+          "status": "mapped",
+          "parser": "plantdoc",
+          "notes": null
+        },
+        {
+          "raw_label": "Squash Powdery mildew leaf",
+          "dataset_name": "plantdoc",
+          "image_count": 129,
+          "standard_label": {
+            "plant": "Squash",
+            "disease": "Powdery Mildew",
+            "is_healthy": false,
+            "canonical_key": "squash|powdery_mildew"
+          },
+          "status": "mapped",
+          "parser": "plantdoc",
+          "notes": null
+        },
+        {
+          "raw_label": "Strawberry leaf",
+          "dataset_name": "plantdoc",
+          "image_count": 96,
+          "standard_label": {
+            "plant": "Strawberry",
+            "disease": "Healthy",
+            "is_healthy": true,
+            "canonical_key": "strawberry|healthy"
+          },
+          "status": "mapped",
+          "parser": "plantdoc",
+          "notes": null
+        },
+        {
+          "raw_label": "Tomato Early blight leaf",
+          "dataset_name": "plantdoc",
+          "image_count": 83,
+          "standard_label": {
+            "plant": "Tomato",
+            "disease": "Early Blight",
+            "is_healthy": false,
+            "canonical_key": "tomato|early_blight"
+          },
+          "status": "mapped",
+          "parser": "plantdoc",
+          "notes": null
+        },
+        {
+          "raw_label": "Tomato Septoria leaf spot",
+          "dataset_name": "plantdoc",
+          "image_count": 148,
+          "standard_label": {
+            "plant": "Tomato",
+            "disease": "Septoria Leaf Spot",
+            "is_healthy": false,
+            "canonical_key": "tomato|septoria_leaf_spot"
+          },
+          "status": "mapped",
+          "parser": "plantdoc",
+          "notes": null
+        },
+        {
+          "raw_label": "Tomato leaf",
+          "dataset_name": "plantdoc",
+          "image_count": 62,
+          "standard_label": {
+            "plant": "Tomato",
+            "disease": "Healthy",
+            "is_healthy": true,
+            "canonical_key": "tomato|healthy"
+          },
+          "status": "mapped",
+          "parser": "plantdoc",
+          "notes": null
+        },
+        {
+          "raw_label": "Tomato leaf bacterial spot",
+          "dataset_name": "plantdoc",
+          "image_count": 107,
+          "standard_label": {
+            "plant": "Tomato",
+            "disease": "Bacterial Spot",
+            "is_healthy": false,
+            "canonical_key": "tomato|bacterial_spot"
+          },
+          "status": "mapped",
+          "parser": "plantdoc",
+          "notes": null
+        },
+        {
+          "raw_label": "Tomato leaf late blight",
+          "dataset_name": "plantdoc",
+          "image_count": 111,
+          "standard_label": {
+            "plant": "Tomato",
+            "disease": "Late Blight",
+            "is_healthy": false,
+            "canonical_key": "tomato|late_blight"
+          },
+          "status": "mapped",
+          "parser": "plantdoc",
+          "notes": null
+        },
+        {
+          "raw_label": "Tomato leaf mosaic virus",
+          "dataset_name": "plantdoc",
+          "image_count": 54,
+          "standard_label": {
+            "plant": "Tomato",
+            "disease": "Tomato Mosaic Virus",
+            "is_healthy": false,
+            "canonical_key": "tomato|tomato_mosaic_virus"
+          },
+          "status": "mapped",
+          "parser": "plantdoc",
+          "notes": null
+        },
+        {
+          "raw_label": "Tomato leaf yellow virus",
+          "dataset_name": "plantdoc",
+          "image_count": 75,
+          "standard_label": {
+            "plant": "Tomato",
+            "disease": "Tomato Yellow Leaf Curl Virus",
+            "is_healthy": false,
+            "canonical_key": "tomato|tomato_yellow_leaf_curl_virus"
+          },
+          "status": "mapped",
+          "parser": "plantdoc",
+          "notes": null
+        },
+        {
+          "raw_label": "Tomato mold leaf",
+          "dataset_name": "plantdoc",
+          "image_count": 91,
+          "standard_label": {
+            "plant": "Tomato",
+            "disease": "Leaf Mold",
+            "is_healthy": false,
+            "canonical_key": "tomato|leaf_mold"
+          },
+          "status": "mapped",
+          "parser": "plantdoc",
+          "notes": null
+        },
+        {
+          "raw_label": "grape leaf",
+          "dataset_name": "plantdoc",
+          "image_count": 69,
+          "standard_label": {
+            "plant": "Grape",
+            "disease": "Healthy",
+            "is_healthy": true,
+            "canonical_key": "grape|healthy"
+          },
+          "status": "mapped",
+          "parser": "plantdoc",
+          "notes": null
+        },
+        {
+          "raw_label": "grape leaf black rot",
+          "dataset_name": "plantdoc",
+          "image_count": 64,
+          "standard_label": {
+            "plant": "Grape",
+            "disease": "Black Rot",
+            "is_healthy": false,
+            "canonical_key": "grape|black_rot"
+          },
+          "status": "mapped",
+          "parser": "plantdoc",
+          "notes": null
+        }
+      ]
+    },
+    "plantvillage": {
+      "dataset_name": "plantvillage",
+      "total_raw_labels": 38,
+      "mapped_labels": 38,
+      "mappings": [
+        {
+          "raw_label": "Apple___Apple_scab",
+          "dataset_name": "plantvillage",
+          "image_count": 630,
+          "standard_label": {
+            "plant": "Apple",
+            "disease": "Apple Scab",
+            "is_healthy": false,
+            "canonical_key": "apple|apple_scab"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Apple___Black_rot",
+          "dataset_name": "plantvillage",
+          "image_count": 621,
+          "standard_label": {
+            "plant": "Apple",
+            "disease": "Black Rot",
+            "is_healthy": false,
+            "canonical_key": "apple|black_rot"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Apple___Cedar_apple_rust",
+          "dataset_name": "plantvillage",
+          "image_count": 275,
+          "standard_label": {
+            "plant": "Apple",
+            "disease": "Cedar Apple Rust",
+            "is_healthy": false,
+            "canonical_key": "apple|cedar_apple_rust"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Apple___healthy",
+          "dataset_name": "plantvillage",
+          "image_count": 1645,
+          "standard_label": {
+            "plant": "Apple",
+            "disease": "Healthy",
+            "is_healthy": true,
+            "canonical_key": "apple|healthy"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Blueberry___healthy",
+          "dataset_name": "plantvillage",
+          "image_count": 1502,
+          "standard_label": {
+            "plant": "Blueberry",
+            "disease": "Healthy",
+            "is_healthy": true,
+            "canonical_key": "blueberry|healthy"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Cherry_(including_sour)___Powdery_mildew",
+          "dataset_name": "plantvillage",
+          "image_count": 1052,
+          "standard_label": {
+            "plant": "Cherry",
+            "disease": "Powdery Mildew",
+            "is_healthy": false,
+            "canonical_key": "cherry|powdery_mildew"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Cherry_(including_sour)___healthy",
+          "dataset_name": "plantvillage",
+          "image_count": 854,
+          "standard_label": {
+            "plant": "Cherry",
+            "disease": "Healthy",
+            "is_healthy": true,
+            "canonical_key": "cherry|healthy"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+          "dataset_name": "plantvillage",
+          "image_count": 513,
+          "standard_label": {
+            "plant": "Corn",
+            "disease": "Cercospora Leaf Spot Gray Leaf Spot",
+            "is_healthy": false,
+            "canonical_key": "corn|cercospora_leaf_spot_gray_leaf_spot"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Corn_(maize)___Common_rust_",
+          "dataset_name": "plantvillage",
+          "image_count": 1192,
+          "standard_label": {
+            "plant": "Corn",
+            "disease": "Common Rust",
+            "is_healthy": false,
+            "canonical_key": "corn|common_rust"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Corn_(maize)___Northern_Leaf_Blight",
+          "dataset_name": "plantvillage",
+          "image_count": 985,
+          "standard_label": {
+            "plant": "Corn",
+            "disease": "Northern Leaf Blight",
+            "is_healthy": false,
+            "canonical_key": "corn|northern_leaf_blight"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Corn_(maize)___healthy",
+          "dataset_name": "plantvillage",
+          "image_count": 1162,
+          "standard_label": {
+            "plant": "Corn",
+            "disease": "Healthy",
+            "is_healthy": true,
+            "canonical_key": "corn|healthy"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Grape___Black_rot",
+          "dataset_name": "plantvillage",
+          "image_count": 1180,
+          "standard_label": {
+            "plant": "Grape",
+            "disease": "Black Rot",
+            "is_healthy": false,
+            "canonical_key": "grape|black_rot"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Grape___Esca_(Black_Measles)",
+          "dataset_name": "plantvillage",
+          "image_count": 1383,
+          "standard_label": {
+            "plant": "Grape",
+            "disease": "Esca (Black Measles)",
+            "is_healthy": false,
+            "canonical_key": "grape|esca_(black_measles)"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+          "dataset_name": "plantvillage",
+          "image_count": 1076,
+          "standard_label": {
+            "plant": "Grape",
+            "disease": "Leaf Blight (Isariopsis Leaf Spot)",
+            "is_healthy": false,
+            "canonical_key": "grape|leaf_blight_(isariopsis_leaf_spot)"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Grape___healthy",
+          "dataset_name": "plantvillage",
+          "image_count": 423,
+          "standard_label": {
+            "plant": "Grape",
+            "disease": "Healthy",
+            "is_healthy": true,
+            "canonical_key": "grape|healthy"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Orange___Haunglongbing_(Citrus_greening)",
+          "dataset_name": "plantvillage",
+          "image_count": 5507,
+          "standard_label": {
+            "plant": "Orange",
+            "disease": "Huanglongbing (Citrus Greening)",
+            "is_healthy": false,
+            "canonical_key": "orange|huanglongbing_(citrus_greening)"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Peach___Bacterial_spot",
+          "dataset_name": "plantvillage",
+          "image_count": 2297,
+          "standard_label": {
+            "plant": "Peach",
+            "disease": "Bacterial Spot",
+            "is_healthy": false,
+            "canonical_key": "peach|bacterial_spot"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Peach___healthy",
+          "dataset_name": "plantvillage",
+          "image_count": 360,
+          "standard_label": {
+            "plant": "Peach",
+            "disease": "Healthy",
+            "is_healthy": true,
+            "canonical_key": "peach|healthy"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Pepper,_bell___Bacterial_spot",
+          "dataset_name": "plantvillage",
+          "image_count": 997,
+          "standard_label": {
+            "plant": "Pepper",
+            "disease": "Bacterial Spot",
+            "is_healthy": false,
+            "canonical_key": "pepper|bacterial_spot"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Pepper,_bell___healthy",
+          "dataset_name": "plantvillage",
+          "image_count": 1478,
+          "standard_label": {
+            "plant": "Pepper",
+            "disease": "Healthy",
+            "is_healthy": true,
+            "canonical_key": "pepper|healthy"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Potato___Early_blight",
+          "dataset_name": "plantvillage",
+          "image_count": 1000,
+          "standard_label": {
+            "plant": "Potato",
+            "disease": "Early Blight",
+            "is_healthy": false,
+            "canonical_key": "potato|early_blight"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Potato___Late_blight",
+          "dataset_name": "plantvillage",
+          "image_count": 1000,
+          "standard_label": {
+            "plant": "Potato",
+            "disease": "Late Blight",
+            "is_healthy": false,
+            "canonical_key": "potato|late_blight"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Potato___healthy",
+          "dataset_name": "plantvillage",
+          "image_count": 152,
+          "standard_label": {
+            "plant": "Potato",
+            "disease": "Healthy",
+            "is_healthy": true,
+            "canonical_key": "potato|healthy"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Raspberry___healthy",
+          "dataset_name": "plantvillage",
+          "image_count": 371,
+          "standard_label": {
+            "plant": "Raspberry",
+            "disease": "Healthy",
+            "is_healthy": true,
+            "canonical_key": "raspberry|healthy"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Soybean___healthy",
+          "dataset_name": "plantvillage",
+          "image_count": 5090,
+          "standard_label": {
+            "plant": "Soybean",
+            "disease": "Healthy",
+            "is_healthy": true,
+            "canonical_key": "soybean|healthy"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Squash___Powdery_mildew",
+          "dataset_name": "plantvillage",
+          "image_count": 1835,
+          "standard_label": {
+            "plant": "Squash",
+            "disease": "Powdery Mildew",
+            "is_healthy": false,
+            "canonical_key": "squash|powdery_mildew"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Strawberry___Leaf_scorch",
+          "dataset_name": "plantvillage",
+          "image_count": 1109,
+          "standard_label": {
+            "plant": "Strawberry",
+            "disease": "Leaf Scorch",
+            "is_healthy": false,
+            "canonical_key": "strawberry|leaf_scorch"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Strawberry___healthy",
+          "dataset_name": "plantvillage",
+          "image_count": 456,
+          "standard_label": {
+            "plant": "Strawberry",
+            "disease": "Healthy",
+            "is_healthy": true,
+            "canonical_key": "strawberry|healthy"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Tomato___Bacterial_spot",
+          "dataset_name": "plantvillage",
+          "image_count": 2127,
+          "standard_label": {
+            "plant": "Tomato",
+            "disease": "Bacterial Spot",
+            "is_healthy": false,
+            "canonical_key": "tomato|bacterial_spot"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Tomato___Early_blight",
+          "dataset_name": "plantvillage",
+          "image_count": 1000,
+          "standard_label": {
+            "plant": "Tomato",
+            "disease": "Early Blight",
+            "is_healthy": false,
+            "canonical_key": "tomato|early_blight"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Tomato___Late_blight",
+          "dataset_name": "plantvillage",
+          "image_count": 1909,
+          "standard_label": {
+            "plant": "Tomato",
+            "disease": "Late Blight",
+            "is_healthy": false,
+            "canonical_key": "tomato|late_blight"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Tomato___Leaf_Mold",
+          "dataset_name": "plantvillage",
+          "image_count": 952,
+          "standard_label": {
+            "plant": "Tomato",
+            "disease": "Leaf Mold",
+            "is_healthy": false,
+            "canonical_key": "tomato|leaf_mold"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Tomato___Septoria_leaf_spot",
+          "dataset_name": "plantvillage",
+          "image_count": 1771,
+          "standard_label": {
+            "plant": "Tomato",
+            "disease": "Septoria Leaf Spot",
+            "is_healthy": false,
+            "canonical_key": "tomato|septoria_leaf_spot"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Tomato___Spider_mites Two-spotted_spider_mite",
+          "dataset_name": "plantvillage",
+          "image_count": 1676,
+          "standard_label": {
+            "plant": "Tomato",
+            "disease": "Spider Mites Two Spotted Spider Mite",
+            "is_healthy": false,
+            "canonical_key": "tomato|spider_mites_two_spotted_spider_mite"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Tomato___Target_Spot",
+          "dataset_name": "plantvillage",
+          "image_count": 1404,
+          "standard_label": {
+            "plant": "Tomato",
+            "disease": "Target Spot",
+            "is_healthy": false,
+            "canonical_key": "tomato|target_spot"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+          "dataset_name": "plantvillage",
+          "image_count": 5357,
+          "standard_label": {
+            "plant": "Tomato",
+            "disease": "Tomato Yellow Leaf Curl Virus",
+            "is_healthy": false,
+            "canonical_key": "tomato|tomato_yellow_leaf_curl_virus"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Tomato___Tomato_mosaic_virus",
+          "dataset_name": "plantvillage",
+          "image_count": 373,
+          "standard_label": {
+            "plant": "Tomato",
+            "disease": "Tomato Mosaic Virus",
+            "is_healthy": false,
+            "canonical_key": "tomato|tomato_mosaic_virus"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        },
+        {
+          "raw_label": "Tomato___healthy",
+          "dataset_name": "plantvillage",
+          "image_count": 1591,
+          "standard_label": {
+            "plant": "Tomato",
+            "disease": "Healthy",
+            "is_healthy": true,
+            "canonical_key": "tomato|healthy"
+          },
+          "status": "mapped",
+          "parser": "plantvillage",
+          "notes": null
+        }
+      ]
+    }
+  },
+  "issues": {
+    "unknown_labels": [],
+    "ambiguous_labels": [],
+    "duplicate_mappings": [
+      {
+        "issue_type": "duplicate_mapping",
+        "raw_label": "apple|apple_scab",
+        "dataset_name": "cross-dataset",
+        "message": "2 raw labels map to canonical key 'apple|apple_scab'.",
+        "candidates": [
+          "plantdoc:Apple Scab Leaf",
+          "plantvillage:Apple___Apple_scab"
+        ]
+      },
+      {
+        "issue_type": "duplicate_mapping",
+        "raw_label": "apple|healthy",
+        "dataset_name": "cross-dataset",
+        "message": "2 raw labels map to canonical key 'apple|healthy'.",
+        "candidates": [
+          "plantdoc:Apple leaf",
+          "plantvillage:Apple___healthy"
+        ]
+      },
+      {
+        "issue_type": "duplicate_mapping",
+        "raw_label": "blueberry|healthy",
+        "dataset_name": "cross-dataset",
+        "message": "2 raw labels map to canonical key 'blueberry|healthy'.",
+        "candidates": [
+          "plantdoc:Blueberry leaf",
+          "plantvillage:Blueberry___healthy"
+        ]
+      },
+      {
+        "issue_type": "duplicate_mapping",
+        "raw_label": "cherry|healthy",
+        "dataset_name": "cross-dataset",
+        "message": "2 raw labels map to canonical key 'cherry|healthy'.",
+        "candidates": [
+          "plantdoc:Cherry leaf",
+          "plantvillage:Cherry_(including_sour)___healthy"
+        ]
+      },
+      {
+        "issue_type": "duplicate_mapping",
+        "raw_label": "grape|black_rot",
+        "dataset_name": "cross-dataset",
+        "message": "2 raw labels map to canonical key 'grape|black_rot'.",
+        "candidates": [
+          "plantdoc:grape leaf black rot",
+          "plantvillage:Grape___Black_rot"
+        ]
+      },
+      {
+        "issue_type": "duplicate_mapping",
+        "raw_label": "grape|healthy",
+        "dataset_name": "cross-dataset",
+        "message": "2 raw labels map to canonical key 'grape|healthy'.",
+        "candidates": [
+          "plantdoc:grape leaf",
+          "plantvillage:Grape___healthy"
+        ]
+      },
+      {
+        "issue_type": "duplicate_mapping",
+        "raw_label": "peach|healthy",
+        "dataset_name": "cross-dataset",
+        "message": "2 raw labels map to canonical key 'peach|healthy'.",
+        "candidates": [
+          "plantdoc:Peach leaf",
+          "plantvillage:Peach___healthy"
+        ]
+      },
+      {
+        "issue_type": "duplicate_mapping",
+        "raw_label": "pepper|healthy",
+        "dataset_name": "cross-dataset",
+        "message": "2 raw labels map to canonical key 'pepper|healthy'.",
+        "candidates": [
+          "plantdoc:Bell_pepper leaf",
+          "plantvillage:Pepper,_bell___healthy"
+        ]
+      },
+      {
+        "issue_type": "duplicate_mapping",
+        "raw_label": "potato|early_blight",
+        "dataset_name": "cross-dataset",
+        "message": "2 raw labels map to canonical key 'potato|early_blight'.",
+        "candidates": [
+          "plantdoc:Potato leaf early blight",
+          "plantvillage:Potato___Early_blight"
+        ]
+      },
+      {
+        "issue_type": "duplicate_mapping",
+        "raw_label": "potato|late_blight",
+        "dataset_name": "cross-dataset",
+        "message": "2 raw labels map to canonical key 'potato|late_blight'.",
+        "candidates": [
+          "plantdoc:Potato leaf late blight",
+          "plantvillage:Potato___Late_blight"
+        ]
+      },
+      {
+        "issue_type": "duplicate_mapping",
+        "raw_label": "raspberry|healthy",
+        "dataset_name": "cross-dataset",
+        "message": "2 raw labels map to canonical key 'raspberry|healthy'.",
+        "candidates": [
+          "plantdoc:Raspberry leaf",
+          "plantvillage:Raspberry___healthy"
+        ]
+      },
+      {
+        "issue_type": "duplicate_mapping",
+        "raw_label": "soybean|healthy",
+        "dataset_name": "cross-dataset",
+        "message": "2 raw labels map to canonical key 'soybean|healthy'.",
+        "candidates": [
+          "plantdoc:Soyabean leaf",
+          "plantvillage:Soybean___healthy"
+        ]
+      },
+      {
+        "issue_type": "duplicate_mapping",
+        "raw_label": "squash|powdery_mildew",
+        "dataset_name": "cross-dataset",
+        "message": "2 raw labels map to canonical key 'squash|powdery_mildew'.",
+        "candidates": [
+          "plantdoc:Squash Powdery mildew leaf",
+          "plantvillage:Squash___Powdery_mildew"
+        ]
+      },
+      {
+        "issue_type": "duplicate_mapping",
+        "raw_label": "strawberry|healthy",
+        "dataset_name": "cross-dataset",
+        "message": "2 raw labels map to canonical key 'strawberry|healthy'.",
+        "candidates": [
+          "plantdoc:Strawberry leaf",
+          "plantvillage:Strawberry___healthy"
+        ]
+      },
+      {
+        "issue_type": "duplicate_mapping",
+        "raw_label": "tomato|bacterial_spot",
+        "dataset_name": "cross-dataset",
+        "message": "2 raw labels map to canonical key 'tomato|bacterial_spot'.",
+        "candidates": [
+          "plantdoc:Tomato leaf bacterial spot",
+          "plantvillage:Tomato___Bacterial_spot"
+        ]
+      },
+      {
+        "issue_type": "duplicate_mapping",
+        "raw_label": "tomato|early_blight",
+        "dataset_name": "cross-dataset",
+        "message": "2 raw labels map to canonical key 'tomato|early_blight'.",
+        "candidates": [
+          "plantdoc:Tomato Early blight leaf",
+          "plantvillage:Tomato___Early_blight"
+        ]
+      },
+      {
+        "issue_type": "duplicate_mapping",
+        "raw_label": "tomato|healthy",
+        "dataset_name": "cross-dataset",
+        "message": "2 raw labels map to canonical key 'tomato|healthy'.",
+        "candidates": [
+          "plantdoc:Tomato leaf",
+          "plantvillage:Tomato___healthy"
+        ]
+      },
+      {
+        "issue_type": "duplicate_mapping",
+        "raw_label": "tomato|late_blight",
+        "dataset_name": "cross-dataset",
+        "message": "2 raw labels map to canonical key 'tomato|late_blight'.",
+        "candidates": [
+          "plantdoc:Tomato leaf late blight",
+          "plantvillage:Tomato___Late_blight"
+        ]
+      },
+      {
+        "issue_type": "duplicate_mapping",
+        "raw_label": "tomato|leaf_mold",
+        "dataset_name": "cross-dataset",
+        "message": "2 raw labels map to canonical key 'tomato|leaf_mold'.",
+        "candidates": [
+          "plantdoc:Tomato mold leaf",
+          "plantvillage:Tomato___Leaf_Mold"
+        ]
+      },
+      {
+        "issue_type": "duplicate_mapping",
+        "raw_label": "tomato|septoria_leaf_spot",
+        "dataset_name": "cross-dataset",
+        "message": "2 raw labels map to canonical key 'tomato|septoria_leaf_spot'.",
+        "candidates": [
+          "plantdoc:Tomato Septoria leaf spot",
+          "plantvillage:Tomato___Septoria_leaf_spot"
+        ]
+      },
+      {
+        "issue_type": "duplicate_mapping",
+        "raw_label": "tomato|tomato_mosaic_virus",
+        "dataset_name": "cross-dataset",
+        "message": "2 raw labels map to canonical key 'tomato|tomato_mosaic_virus'.",
+        "candidates": [
+          "plantdoc:Tomato leaf mosaic virus",
+          "plantvillage:Tomato___Tomato_mosaic_virus"
+        ]
+      },
+      {
+        "issue_type": "duplicate_mapping",
+        "raw_label": "tomato|tomato_yellow_leaf_curl_virus",
+        "dataset_name": "cross-dataset",
+        "message": "2 raw labels map to canonical key 'tomato|tomato_yellow_leaf_curl_virus'.",
+        "candidates": [
+          "plantdoc:Tomato leaf yellow virus",
+          "plantvillage:Tomato___Tomato_Yellow_Leaf_Curl_Virus"
+        ]
+      }
+    ],
+    "unmapped_labels": []
+  }
+}

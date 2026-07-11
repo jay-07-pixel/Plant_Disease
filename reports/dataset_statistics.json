@@ -1,0 +1,1745 @@
+{
+  "source_dir": "C:\\Projects\\PlantDiseaseAI\\datasets\\external",
+  "generated_at": "2026-07-11T02:22:34.970625+00:00",
+  "total_images": 56857,
+  "total_classes": 130,
+  "aggregate_images_per_class": {
+    "plantdoc/PlantDoc-Dataset\\test\\Apple leaf": 9,
+    "plantdoc/PlantDoc-Dataset\\test\\Apple rust leaf": 10,
+    "plantdoc/PlantDoc-Dataset\\test\\Apple Scab Leaf": 10,
+    "plantdoc/PlantDoc-Dataset\\test\\Bell_pepper leaf": 8,
+    "plantdoc/PlantDoc-Dataset\\test\\Bell_pepper leaf spot": 9,
+    "plantdoc/PlantDoc-Dataset\\test\\Blueberry leaf": 11,
+    "plantdoc/PlantDoc-Dataset\\test\\Cherry leaf": 10,
+    "plantdoc/PlantDoc-Dataset\\test\\Corn Gray leaf spot": 4,
+    "plantdoc/PlantDoc-Dataset\\test\\Corn leaf blight": 12,
+    "plantdoc/PlantDoc-Dataset\\test\\Corn rust leaf": 10,
+    "plantdoc/PlantDoc-Dataset\\test\\grape leaf": 12,
+    "plantdoc/PlantDoc-Dataset\\test\\grape leaf black rot": 8,
+    "plantdoc/PlantDoc-Dataset\\test\\Peach leaf": 9,
+    "plantdoc/PlantDoc-Dataset\\test\\Potato leaf early blight": 8,
+    "plantdoc/PlantDoc-Dataset\\test\\Potato leaf late blight": 8,
+    "plantdoc/PlantDoc-Dataset\\test\\Raspberry leaf": 7,
+    "plantdoc/PlantDoc-Dataset\\test\\Soyabean leaf": 8,
+    "plantdoc/PlantDoc-Dataset\\test\\Squash Powdery mildew leaf": 6,
+    "plantdoc/PlantDoc-Dataset\\test\\Strawberry leaf": 8,
+    "plantdoc/PlantDoc-Dataset\\test\\Tomato Early blight leaf": 9,
+    "plantdoc/PlantDoc-Dataset\\test\\Tomato leaf": 8,
+    "plantdoc/PlantDoc-Dataset\\test\\Tomato leaf bacterial spot": 9,
+    "plantdoc/PlantDoc-Dataset\\test\\Tomato leaf late blight": 10,
+    "plantdoc/PlantDoc-Dataset\\test\\Tomato leaf mosaic virus": 10,
+    "plantdoc/PlantDoc-Dataset\\test\\Tomato leaf yellow virus": 6,
+    "plantdoc/PlantDoc-Dataset\\test\\Tomato mold leaf": 6,
+    "plantdoc/PlantDoc-Dataset\\test\\Tomato Septoria leaf spot": 11,
+    "plantdoc/PlantDoc-Dataset\\train\\Apple leaf": 82,
+    "plantdoc/PlantDoc-Dataset\\train\\Apple rust leaf": 79,
+    "plantdoc/PlantDoc-Dataset\\train\\Apple Scab Leaf": 77,
+    "plantdoc/PlantDoc-Dataset\\train\\Bell_pepper leaf": 53,
+    "plantdoc/PlantDoc-Dataset\\train\\Bell_pepper leaf spot": 62,
+    "plantdoc/PlantDoc-Dataset\\train\\Blueberry leaf": 105,
+    "plantdoc/PlantDoc-Dataset\\train\\Cherry leaf": 47,
+    "plantdoc/PlantDoc-Dataset\\train\\Corn Gray leaf spot": 64,
+    "plantdoc/PlantDoc-Dataset\\train\\Corn leaf blight": 180,
+    "plantdoc/PlantDoc-Dataset\\train\\Corn rust leaf": 106,
+    "plantdoc/PlantDoc-Dataset\\train\\grape leaf": 57,
+    "plantdoc/PlantDoc-Dataset\\train\\grape leaf black rot": 56,
+    "plantdoc/PlantDoc-Dataset\\train\\Peach leaf": 103,
+    "plantdoc/PlantDoc-Dataset\\train\\Potato leaf early blight": 109,
+    "plantdoc/PlantDoc-Dataset\\train\\Potato leaf late blight": 97,
+    "plantdoc/PlantDoc-Dataset\\train\\Raspberry leaf": 109,
+    "plantdoc/PlantDoc-Dataset\\train\\Soyabean leaf": 57,
+    "plantdoc/PlantDoc-Dataset\\train\\Squash Powdery mildew leaf": 123,
+    "plantdoc/PlantDoc-Dataset\\train\\Strawberry leaf": 88,
+    "plantdoc/PlantDoc-Dataset\\train\\Tomato Early blight leaf": 74,
+    "plantdoc/PlantDoc-Dataset\\train\\Tomato leaf": 54,
+    "plantdoc/PlantDoc-Dataset\\train\\Tomato leaf bacterial spot": 98,
+    "plantdoc/PlantDoc-Dataset\\train\\Tomato leaf late blight": 101,
+    "plantdoc/PlantDoc-Dataset\\train\\Tomato leaf mosaic virus": 44,
+    "plantdoc/PlantDoc-Dataset\\train\\Tomato leaf yellow virus": 69,
+    "plantdoc/PlantDoc-Dataset\\train\\Tomato mold leaf": 85,
+    "plantdoc/PlantDoc-Dataset\\train\\Tomato Septoria leaf spot": 137,
+    "plantvillage/PlantVillage\\train\\Apple___Apple_scab": 504,
+    "plantvillage/PlantVillage\\train\\Apple___Black_rot": 496,
+    "plantvillage/PlantVillage\\train\\Apple___Cedar_apple_rust": 220,
+    "plantvillage/PlantVillage\\train\\Apple___healthy": 1316,
+    "plantvillage/PlantVillage\\train\\Blueberry___healthy": 1202,
+    "plantvillage/PlantVillage\\train\\Cherry_(including_sour)___healthy": 684,
+    "plantvillage/PlantVillage\\train\\Cherry_(including_sour)___Powdery_mildew": 842,
+    "plantvillage/PlantVillage\\train\\Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": 410,
+    "plantvillage/PlantVillage\\train\\Corn_(maize)___Common_rust_": 953,
+    "plantvillage/PlantVillage\\train\\Corn_(maize)___healthy": 929,
+    "plantvillage/PlantVillage\\train\\Corn_(maize)___Northern_Leaf_Blight": 788,
+    "plantvillage/PlantVillage\\train\\Grape___Black_rot": 944,
+    "plantvillage/PlantVillage\\train\\Grape___Esca_(Black_Measles)": 1107,
+    "plantvillage/PlantVillage\\train\\Grape___healthy": 339,
+    "plantvillage/PlantVillage\\train\\Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": 861,
+    "plantvillage/PlantVillage\\train\\Orange___Haunglongbing_(Citrus_greening)": 4405,
+    "plantvillage/PlantVillage\\train\\Peach___Bacterial_spot": 1838,
+    "plantvillage/PlantVillage\\train\\Peach___healthy": 288,
+    "plantvillage/PlantVillage\\train\\Pepper,_bell___Bacterial_spot": 797,
+    "plantvillage/PlantVillage\\train\\Pepper,_bell___healthy": 1183,
+    "plantvillage/PlantVillage\\train\\Potato___Early_blight": 800,
+    "plantvillage/PlantVillage\\train\\Potato___healthy": 121,
+    "plantvillage/PlantVillage\\train\\Potato___Late_blight": 800,
+    "plantvillage/PlantVillage\\train\\Raspberry___healthy": 297,
+    "plantvillage/PlantVillage\\train\\Soybean___healthy": 4072,
+    "plantvillage/PlantVillage\\train\\Squash___Powdery_mildew": 1468,
+    "plantvillage/PlantVillage\\train\\Strawberry___healthy": 364,
+    "plantvillage/PlantVillage\\train\\Strawberry___Leaf_scorch": 887,
+    "plantvillage/PlantVillage\\train\\Tomato___Bacterial_spot": 1702,
+    "plantvillage/PlantVillage\\train\\Tomato___Early_blight": 800,
+    "plantvillage/PlantVillage\\train\\Tomato___healthy": 1273,
+    "plantvillage/PlantVillage\\train\\Tomato___Late_blight": 1527,
+    "plantvillage/PlantVillage\\train\\Tomato___Leaf_Mold": 761,
+    "plantvillage/PlantVillage\\train\\Tomato___Septoria_leaf_spot": 1417,
+    "plantvillage/PlantVillage\\train\\Tomato___Spider_mites Two-spotted_spider_mite": 1341,
+    "plantvillage/PlantVillage\\train\\Tomato___Target_Spot": 1123,
+    "plantvillage/PlantVillage\\train\\Tomato___Tomato_mosaic_virus": 299,
+    "plantvillage/PlantVillage\\train\\Tomato___Tomato_Yellow_Leaf_Curl_Virus": 4286,
+    "plantvillage/PlantVillage\\val\\Apple___Apple_scab": 126,
+    "plantvillage/PlantVillage\\val\\Apple___Black_rot": 125,
+    "plantvillage/PlantVillage\\val\\Apple___Cedar_apple_rust": 55,
+    "plantvillage/PlantVillage\\val\\Apple___healthy": 329,
+    "plantvillage/PlantVillage\\val\\Blueberry___healthy": 300,
+    "plantvillage/PlantVillage\\val\\Cherry_(including_sour)___healthy": 170,
+    "plantvillage/PlantVillage\\val\\Cherry_(including_sour)___Powdery_mildew": 210,
+    "plantvillage/PlantVillage\\val\\Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": 103,
+    "plantvillage/PlantVillage\\val\\Corn_(maize)___Common_rust_": 239,
+    "plantvillage/PlantVillage\\val\\Corn_(maize)___healthy": 233,
+    "plantvillage/PlantVillage\\val\\Corn_(maize)___Northern_Leaf_Blight": 197,
+    "plantvillage/PlantVillage\\val\\Grape___Black_rot": 236,
+    "plantvillage/PlantVillage\\val\\Grape___Esca_(Black_Measles)": 276,
+    "plantvillage/PlantVillage\\val\\Grape___healthy": 84,
+    "plantvillage/PlantVillage\\val\\Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": 215,
+    "plantvillage/PlantVillage\\val\\Orange___Haunglongbing_(Citrus_greening)": 1102,
+    "plantvillage/PlantVillage\\val\\Peach___Bacterial_spot": 459,
+    "plantvillage/PlantVillage\\val\\Peach___healthy": 72,
+    "plantvillage/PlantVillage\\val\\Pepper,_bell___Bacterial_spot": 200,
+    "plantvillage/PlantVillage\\val\\Pepper,_bell___healthy": 295,
+    "plantvillage/PlantVillage\\val\\Potato___Early_blight": 200,
+    "plantvillage/PlantVillage\\val\\Potato___healthy": 31,
+    "plantvillage/PlantVillage\\val\\Potato___Late_blight": 200,
+    "plantvillage/PlantVillage\\val\\Raspberry___healthy": 74,
+    "plantvillage/PlantVillage\\val\\Soybean___healthy": 1018,
+    "plantvillage/PlantVillage\\val\\Squash___Powdery_mildew": 367,
+    "plantvillage/PlantVillage\\val\\Strawberry___healthy": 92,
+    "plantvillage/PlantVillage\\val\\Strawberry___Leaf_scorch": 222,
+    "plantvillage/PlantVillage\\val\\Tomato___Bacterial_spot": 425,
+    "plantvillage/PlantVillage\\val\\Tomato___Early_blight": 200,
+    "plantvillage/PlantVillage\\val\\Tomato___healthy": 318,
+    "plantvillage/PlantVillage\\val\\Tomato___Late_blight": 382,
+    "plantvillage/PlantVillage\\val\\Tomato___Leaf_Mold": 191,
+    "plantvillage/PlantVillage\\val\\Tomato___Septoria_leaf_spot": 354,
+    "plantvillage/PlantVillage\\val\\Tomato___Spider_mites Two-spotted_spider_mite": 335,
+    "plantvillage/PlantVillage\\val\\Tomato___Target_Spot": 281,
+    "plantvillage/PlantVillage\\val\\Tomato___Tomato_mosaic_virus": 74,
+    "plantvillage/PlantVillage\\val\\Tomato___Tomato_Yellow_Leaf_Curl_Virus": 1071
+  },
+  "aggregate_format_stats": {
+    "jpeg": 56849,
+    "mpo": 2,
+    "png": 6
+  },
+  "datasets": {
+    "plantdoc": {
+      "dataset_name": "plantdoc",
+      "dataset_path": "C:\\Projects\\PlantDiseaseAI\\datasets\\external\\plantdoc",
+      "total_images": 2552,
+      "total_classes": 54,
+      "class_names": [
+        "PlantDoc-Dataset\\test\\Apple Scab Leaf",
+        "PlantDoc-Dataset\\test\\Apple leaf",
+        "PlantDoc-Dataset\\test\\Apple rust leaf",
+        "PlantDoc-Dataset\\test\\Bell_pepper leaf",
+        "PlantDoc-Dataset\\test\\Bell_pepper leaf spot",
+        "PlantDoc-Dataset\\test\\Blueberry leaf",
+        "PlantDoc-Dataset\\test\\Cherry leaf",
+        "PlantDoc-Dataset\\test\\Corn Gray leaf spot",
+        "PlantDoc-Dataset\\test\\Corn leaf blight",
+        "PlantDoc-Dataset\\test\\Corn rust leaf",
+        "PlantDoc-Dataset\\test\\Peach leaf",
+        "PlantDoc-Dataset\\test\\Potato leaf early blight",
+        "PlantDoc-Dataset\\test\\Potato leaf late blight",
+        "PlantDoc-Dataset\\test\\Raspberry leaf",
+        "PlantDoc-Dataset\\test\\Soyabean leaf",
+        "PlantDoc-Dataset\\test\\Squash Powdery mildew leaf",
+        "PlantDoc-Dataset\\test\\Strawberry leaf",
+        "PlantDoc-Dataset\\test\\Tomato Early blight leaf",
+        "PlantDoc-Dataset\\test\\Tomato Septoria leaf spot",
+        "PlantDoc-Dataset\\test\\Tomato leaf",
+        "PlantDoc-Dataset\\test\\Tomato leaf bacterial spot",
+        "PlantDoc-Dataset\\test\\Tomato leaf late blight",
+        "PlantDoc-Dataset\\test\\Tomato leaf mosaic virus",
+        "PlantDoc-Dataset\\test\\Tomato leaf yellow virus",
+        "PlantDoc-Dataset\\test\\Tomato mold leaf",
+        "PlantDoc-Dataset\\test\\grape leaf",
+        "PlantDoc-Dataset\\test\\grape leaf black rot",
+        "PlantDoc-Dataset\\train\\Apple Scab Leaf",
+        "PlantDoc-Dataset\\train\\Apple leaf",
+        "PlantDoc-Dataset\\train\\Apple rust leaf",
+        "PlantDoc-Dataset\\train\\Bell_pepper leaf",
+        "PlantDoc-Dataset\\train\\Bell_pepper leaf spot",
+        "PlantDoc-Dataset\\train\\Blueberry leaf",
+        "PlantDoc-Dataset\\train\\Cherry leaf",
+        "PlantDoc-Dataset\\train\\Corn Gray leaf spot",
+        "PlantDoc-Dataset\\train\\Corn leaf blight",
+        "PlantDoc-Dataset\\train\\Corn rust leaf",
+        "PlantDoc-Dataset\\train\\Peach leaf",
+        "PlantDoc-Dataset\\train\\Potato leaf early blight",
+        "PlantDoc-Dataset\\train\\Potato leaf late blight",
+        "PlantDoc-Dataset\\train\\Raspberry leaf",
+        "PlantDoc-Dataset\\train\\Soyabean leaf",
+        "PlantDoc-Dataset\\train\\Squash Powdery mildew leaf",
+        "PlantDoc-Dataset\\train\\Strawberry leaf",
+        "PlantDoc-Dataset\\train\\Tomato Early blight leaf",
+        "PlantDoc-Dataset\\train\\Tomato Septoria leaf spot",
+        "PlantDoc-Dataset\\train\\Tomato leaf",
+        "PlantDoc-Dataset\\train\\Tomato leaf bacterial spot",
+        "PlantDoc-Dataset\\train\\Tomato leaf late blight",
+        "PlantDoc-Dataset\\train\\Tomato leaf mosaic virus",
+        "PlantDoc-Dataset\\train\\Tomato leaf yellow virus",
+        "PlantDoc-Dataset\\train\\Tomato mold leaf",
+        "PlantDoc-Dataset\\train\\grape leaf",
+        "PlantDoc-Dataset\\train\\grape leaf black rot"
+      ],
+      "images_per_class": {
+        "PlantDoc-Dataset\\test\\Apple leaf": 9,
+        "PlantDoc-Dataset\\test\\Apple rust leaf": 10,
+        "PlantDoc-Dataset\\test\\Apple Scab Leaf": 10,
+        "PlantDoc-Dataset\\test\\Bell_pepper leaf": 8,
+        "PlantDoc-Dataset\\test\\Bell_pepper leaf spot": 9,
+        "PlantDoc-Dataset\\test\\Blueberry leaf": 11,
+        "PlantDoc-Dataset\\test\\Cherry leaf": 10,
+        "PlantDoc-Dataset\\test\\Corn Gray leaf spot": 4,
+        "PlantDoc-Dataset\\test\\Corn leaf blight": 12,
+        "PlantDoc-Dataset\\test\\Corn rust leaf": 10,
+        "PlantDoc-Dataset\\test\\grape leaf": 12,
+        "PlantDoc-Dataset\\test\\grape leaf black rot": 8,
+        "PlantDoc-Dataset\\test\\Peach leaf": 9,
+        "PlantDoc-Dataset\\test\\Potato leaf early blight": 8,
+        "PlantDoc-Dataset\\test\\Potato leaf late blight": 8,
+        "PlantDoc-Dataset\\test\\Raspberry leaf": 7,
+        "PlantDoc-Dataset\\test\\Soyabean leaf": 8,
+        "PlantDoc-Dataset\\test\\Squash Powdery mildew leaf": 6,
+        "PlantDoc-Dataset\\test\\Strawberry leaf": 8,
+        "PlantDoc-Dataset\\test\\Tomato Early blight leaf": 9,
+        "PlantDoc-Dataset\\test\\Tomato leaf": 8,
+        "PlantDoc-Dataset\\test\\Tomato leaf bacterial spot": 9,
+        "PlantDoc-Dataset\\test\\Tomato leaf late blight": 10,
+        "PlantDoc-Dataset\\test\\Tomato leaf mosaic virus": 10,
+        "PlantDoc-Dataset\\test\\Tomato leaf yellow virus": 6,
+        "PlantDoc-Dataset\\test\\Tomato mold leaf": 6,
+        "PlantDoc-Dataset\\test\\Tomato Septoria leaf spot": 11,
+        "PlantDoc-Dataset\\train\\Apple leaf": 82,
+        "PlantDoc-Dataset\\train\\Apple rust leaf": 79,
+        "PlantDoc-Dataset\\train\\Apple Scab Leaf": 77,
+        "PlantDoc-Dataset\\train\\Bell_pepper leaf": 53,
+        "PlantDoc-Dataset\\train\\Bell_pepper leaf spot": 62,
+        "PlantDoc-Dataset\\train\\Blueberry leaf": 105,
+        "PlantDoc-Dataset\\train\\Cherry leaf": 47,
+        "PlantDoc-Dataset\\train\\Corn Gray leaf spot": 64,
+        "PlantDoc-Dataset\\train\\Corn leaf blight": 180,
+        "PlantDoc-Dataset\\train\\Corn rust leaf": 106,
+        "PlantDoc-Dataset\\train\\grape leaf": 57,
+        "PlantDoc-Dataset\\train\\grape leaf black rot": 56,
+        "PlantDoc-Dataset\\train\\Peach leaf": 103,
+        "PlantDoc-Dataset\\train\\Potato leaf early blight": 109,
+        "PlantDoc-Dataset\\train\\Potato leaf late blight": 97,
+        "PlantDoc-Dataset\\train\\Raspberry leaf": 109,
+        "PlantDoc-Dataset\\train\\Soyabean leaf": 57,
+        "PlantDoc-Dataset\\train\\Squash Powdery mildew leaf": 123,
+        "PlantDoc-Dataset\\train\\Strawberry leaf": 88,
+        "PlantDoc-Dataset\\train\\Tomato Early blight leaf": 74,
+        "PlantDoc-Dataset\\train\\Tomato leaf": 54,
+        "PlantDoc-Dataset\\train\\Tomato leaf bacterial spot": 98,
+        "PlantDoc-Dataset\\train\\Tomato leaf late blight": 101,
+        "PlantDoc-Dataset\\train\\Tomato leaf mosaic virus": 44,
+        "PlantDoc-Dataset\\train\\Tomato leaf yellow virus": 69,
+        "PlantDoc-Dataset\\train\\Tomato mold leaf": 85,
+        "PlantDoc-Dataset\\train\\Tomato Septoria leaf spot": 137
+      },
+      "class_imbalance": {
+        "majority_class": "PlantDoc-Dataset\\train\\Corn leaf blight",
+        "majority_count": 180,
+        "minority_class": "PlantDoc-Dataset\\test\\Corn Gray leaf spot",
+        "minority_count": 4,
+        "imbalance_ratio": 45.0,
+        "coefficient_of_variation": 0.9341212827711364
+      },
+      "empty_folders": [],
+      "non_image_files": [],
+      "corrupted_images": [],
+      "resolution_stats": {
+        "count": 2552,
+        "width_min": 115,
+        "width_max": 6000,
+        "width_mean": 1049.8275862068965,
+        "width_median": 800.0,
+        "height_min": 69,
+        "height_max": 6000,
+        "height_mean": 896.7460815047021,
+        "height_median": 655.5,
+        "megapixels_min": 0.00897,
+        "megapixels_max": 24.0,
+        "megapixels_mean": 1.4992988894984327,
+        "megapixels_median": 0.49278500000000003
+      },
+      "format_stats": {
+        "jpeg": 2545,
+        "mpo": 2,
+        "png": 5
+      },
+      "duplicate_hash_groups": [
+        [
+          "PlantDoc-Dataset\\test\\Blueberry leaf\\Blueberry leaf (1).jpg",
+          "PlantDoc-Dataset\\train\\Blueberry leaf\\Blueberry leaf (49).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\test\\Corn Gray leaf spot\\Corn Gray leaf spot (1).jpg",
+          "PlantDoc-Dataset\\train\\Corn leaf blight\\Corn leaf blight (121).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\test\\Corn leaf blight\\Corn leaf blight (10).jpg",
+          "PlantDoc-Dataset\\train\\Corn Gray leaf spot\\Corn Gray leaf spot (20).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\test\\Corn leaf blight\\Corn leaf blight (7).jpg",
+          "PlantDoc-Dataset\\train\\Corn Gray leaf spot\\Corn Gray leaf spot (12).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\test\\Potato leaf early blight\\Potato leaf early blight (2).jpg",
+          "PlantDoc-Dataset\\train\\Potato leaf late blight\\Potato leaf late blight (19).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\test\\Potato leaf early blight\\Potato leaf early blight (5).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Early blight leaf\\Tomato Early blight leaf (39).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\test\\Potato leaf late blight\\Potato leaf late blight (1).jpg",
+          "PlantDoc-Dataset\\train\\Potato leaf early blight\\Potato leaf early blight (13).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\test\\Potato leaf late blight\\Potato leaf late blight (4).jpg",
+          "PlantDoc-Dataset\\train\\Potato leaf early blight\\Potato leaf early blight (24).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf late blight\\Tomato leaf late blight (91).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\test\\Potato leaf late blight\\Potato leaf late blight (6).jpg",
+          "PlantDoc-Dataset\\train\\Potato leaf early blight\\Potato leaf early blight (70).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\test\\Tomato leaf bacterial spot\\Tomato leaf bacterial spot (9).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (109).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\test\\Tomato leaf late blight\\Tomato leaf late blight (1).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf late blight\\Tomato leaf late blight (39).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\test\\Tomato leaf yellow virus\\Tomato leaf yellow virus (6).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf yellow virus\\Tomato leaf yellow virus (63).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\test\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (9).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (48).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Apple Scab Leaf\\Apple Scab Leaf (17).jpg",
+          "PlantDoc-Dataset\\train\\Apple Scab Leaf\\Apple Scab Leaf (23).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Bell_pepper leaf spot\\Bell_pepper leaf spot (31).jpg",
+          "PlantDoc-Dataset\\train\\Bell_pepper leaf spot\\Bell_pepper leaf spot (57).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Bell_pepper leaf spot\\Bell_pepper leaf spot (36).jpg",
+          "PlantDoc-Dataset\\train\\Bell_pepper leaf spot\\Bell_pepper leaf spot (39).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Bell_pepper leaf spot\\Bell_pepper leaf spot (37).jpg",
+          "PlantDoc-Dataset\\train\\Bell_pepper leaf spot\\Bell_pepper leaf spot (38).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Cherry leaf\\Cherry leaf (26).jpg",
+          "PlantDoc-Dataset\\train\\Cherry leaf\\Cherry leaf (32).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Corn Gray leaf spot\\Corn Gray leaf spot (33).jpg",
+          "PlantDoc-Dataset\\train\\Corn leaf blight\\Corn leaf blight (105).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Corn leaf blight\\Corn leaf blight (101).jpg",
+          "PlantDoc-Dataset\\train\\Corn leaf blight\\Corn leaf blight (156).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Corn leaf blight\\Corn leaf blight (35).jpg",
+          "PlantDoc-Dataset\\train\\Corn leaf blight\\Corn leaf blight (36).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Corn rust leaf\\Corn rust leaf (17).jpg",
+          "PlantDoc-Dataset\\train\\Corn rust leaf\\Corn rust leaf (18).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\grape leaf black rot\\grape leaf black rot (51).jpg",
+          "PlantDoc-Dataset\\train\\grape leaf black rot\\grape leaf black rot (54).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Potato leaf early blight\\Potato leaf early blight (14).jpg",
+          "PlantDoc-Dataset\\train\\Potato leaf late blight\\Potato leaf late blight (11).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Potato leaf early blight\\Potato leaf early blight (16).jpg",
+          "PlantDoc-Dataset\\train\\Potato leaf late blight\\Potato leaf late blight (43).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Potato leaf early blight\\Potato leaf early blight (25).jpg",
+          "PlantDoc-Dataset\\train\\Potato leaf late blight\\Potato leaf late blight (14).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Potato leaf early blight\\Potato leaf early blight (34).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf late blight\\Tomato leaf late blight (66).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Potato leaf early blight\\Potato leaf early blight (49).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Early blight leaf\\Tomato Early blight leaf (34).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Potato leaf early blight\\Potato leaf early blight (52).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf late blight\\Tomato leaf late blight (68).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Potato leaf early blight\\Potato leaf early blight (6).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Early blight leaf\\Tomato Early blight leaf (46).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Early blight leaf\\Tomato Early blight leaf (63).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Potato leaf early blight\\Potato leaf early blight (69).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (43).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Potato leaf late blight\\Potato leaf late blight (16).jpg",
+          "PlantDoc-Dataset\\train\\Potato leaf late blight\\Potato leaf late blight (26).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Potato leaf late blight\\Potato leaf late blight (35).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf late blight\\Tomato leaf late blight (22).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Potato leaf late blight\\Potato leaf late blight (36).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf late blight\\Tomato leaf late blight (73).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Potato leaf late blight\\Potato leaf late blight (67).jpg",
+          "PlantDoc-Dataset\\train\\Potato leaf late blight\\Potato leaf late blight (80).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Potato leaf late blight\\Potato leaf late blight (95).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Early blight leaf\\Tomato Early blight leaf (7).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Raspberry leaf\\Raspberry leaf (4).jpg",
+          "PlantDoc-Dataset\\train\\Raspberry leaf\\Raspberry leaf (92).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Squash Powdery mildew leaf\\Squash Powdery mildew leaf (113).jpg",
+          "PlantDoc-Dataset\\train\\Squash Powdery mildew leaf\\Squash Powdery mildew leaf (114).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Squash Powdery mildew leaf\\Squash Powdery mildew leaf (33).jpg",
+          "PlantDoc-Dataset\\train\\Squash Powdery mildew leaf\\Squash Powdery mildew leaf (5).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Tomato Early blight leaf\\Tomato Early blight leaf (14).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (36).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Tomato Early blight leaf\\Tomato Early blight leaf (28).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Early blight leaf\\Tomato Early blight leaf (30).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Tomato Early blight leaf\\Tomato Early blight leaf (52).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (59).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Tomato Early blight leaf\\Tomato Early blight leaf (55).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf late blight\\Tomato leaf late blight (82).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Tomato leaf bacterial spot\\Tomato leaf bacterial spot (52).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf bacterial spot\\Tomato leaf bacterial spot (53).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (62).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf bacterial spot\\Tomato leaf bacterial spot (63).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (103).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf bacterial spot\\Tomato leaf bacterial spot (86).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Tomato leaf late blight\\Tomato leaf late blight (20).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf late blight\\Tomato leaf late blight (6).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Tomato leaf late blight\\Tomato leaf late blight (44).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf late blight\\Tomato leaf late blight (5).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Tomato leaf late blight\\Tomato leaf late blight (72).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf late blight\\Tomato leaf late blight (87).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Tomato leaf yellow virus\\Tomato leaf yellow virus (48).jpg",
+          "PlantDoc-Dataset\\train\\Tomato mold leaf\\Tomato mold leaf (85).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (124).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (125).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (126).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (127).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (136).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (51).jpg"
+        ],
+        [
+          "PlantDoc-Dataset\\train\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (4).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (49).jpg"
+        ]
+      ],
+      "duplicate_filenames": {
+        "Apple Scab Leaf (1).jpg": [
+          "PlantDoc-Dataset\\test\\Apple Scab Leaf\\Apple Scab Leaf (1).jpg",
+          "PlantDoc-Dataset\\train\\Apple Scab Leaf\\Apple Scab Leaf (1).jpg"
+        ],
+        "Apple Scab Leaf (10).jpg": [
+          "PlantDoc-Dataset\\test\\Apple Scab Leaf\\Apple Scab Leaf (10).jpg",
+          "PlantDoc-Dataset\\train\\Apple Scab Leaf\\Apple Scab Leaf (10).jpg"
+        ],
+        "Apple Scab Leaf (2).jpg": [
+          "PlantDoc-Dataset\\test\\Apple Scab Leaf\\Apple Scab Leaf (2).jpg",
+          "PlantDoc-Dataset\\train\\Apple Scab Leaf\\Apple Scab Leaf (2).jpg"
+        ],
+        "Apple Scab Leaf (3).jpg": [
+          "PlantDoc-Dataset\\test\\Apple Scab Leaf\\Apple Scab Leaf (3).jpg",
+          "PlantDoc-Dataset\\train\\Apple Scab Leaf\\Apple Scab Leaf (3).jpg"
+        ],
+        "Apple Scab Leaf (4).jpg": [
+          "PlantDoc-Dataset\\test\\Apple Scab Leaf\\Apple Scab Leaf (4).jpg",
+          "PlantDoc-Dataset\\train\\Apple Scab Leaf\\Apple Scab Leaf (4).jpg"
+        ],
+        "Apple Scab Leaf (5).jpg": [
+          "PlantDoc-Dataset\\test\\Apple Scab Leaf\\Apple Scab Leaf (5).jpg",
+          "PlantDoc-Dataset\\train\\Apple Scab Leaf\\Apple Scab Leaf (5).jpg"
+        ],
+        "Apple Scab Leaf (6).jpg": [
+          "PlantDoc-Dataset\\test\\Apple Scab Leaf\\Apple Scab Leaf (6).jpg",
+          "PlantDoc-Dataset\\train\\Apple Scab Leaf\\Apple Scab Leaf (6).jpg"
+        ],
+        "Apple Scab Leaf (7).jpg": [
+          "PlantDoc-Dataset\\test\\Apple Scab Leaf\\Apple Scab Leaf (7).jpg",
+          "PlantDoc-Dataset\\train\\Apple Scab Leaf\\Apple Scab Leaf (7).jpg"
+        ],
+        "Apple Scab Leaf (8).jpg": [
+          "PlantDoc-Dataset\\test\\Apple Scab Leaf\\Apple Scab Leaf (8).jpg",
+          "PlantDoc-Dataset\\train\\Apple Scab Leaf\\Apple Scab Leaf (8).jpg"
+        ],
+        "Apple Scab Leaf (9).jpg": [
+          "PlantDoc-Dataset\\test\\Apple Scab Leaf\\Apple Scab Leaf (9).jpg",
+          "PlantDoc-Dataset\\train\\Apple Scab Leaf\\Apple Scab Leaf (9).jpg"
+        ],
+        "Apple leaf (1).jpg": [
+          "PlantDoc-Dataset\\test\\Apple leaf\\Apple leaf (1).jpg",
+          "PlantDoc-Dataset\\train\\Apple leaf\\Apple leaf (1).jpg"
+        ],
+        "Apple leaf (2).jpg": [
+          "PlantDoc-Dataset\\test\\Apple leaf\\Apple leaf (2).jpg",
+          "PlantDoc-Dataset\\train\\Apple leaf\\Apple leaf (2).jpg"
+        ],
+        "Apple leaf (3).jpg": [
+          "PlantDoc-Dataset\\test\\Apple leaf\\Apple leaf (3).jpg",
+          "PlantDoc-Dataset\\train\\Apple leaf\\Apple leaf (3).jpg"
+        ],
+        "Apple leaf (4).jpg": [
+          "PlantDoc-Dataset\\test\\Apple leaf\\Apple leaf (4).jpg",
+          "PlantDoc-Dataset\\train\\Apple leaf\\Apple leaf (4).jpg"
+        ],
+        "Apple leaf (5).jpg": [
+          "PlantDoc-Dataset\\test\\Apple leaf\\Apple leaf (5).jpg",
+          "PlantDoc-Dataset\\train\\Apple leaf\\Apple leaf (5).jpg"
+        ],
+        "Apple leaf (6).jpg": [
+          "PlantDoc-Dataset\\test\\Apple leaf\\Apple leaf (6).jpg",
+          "PlantDoc-Dataset\\train\\Apple leaf\\Apple leaf (6).jpg"
+        ],
+        "Apple leaf (7).jpg": [
+          "PlantDoc-Dataset\\test\\Apple leaf\\Apple leaf (7).jpg",
+          "PlantDoc-Dataset\\train\\Apple leaf\\Apple leaf (7).jpg"
+        ],
+        "Apple leaf (8).jpg": [
+          "PlantDoc-Dataset\\test\\Apple leaf\\Apple leaf (8).jpg",
+          "PlantDoc-Dataset\\train\\Apple leaf\\Apple leaf (8).jpg"
+        ],
+        "Apple leaf (9).jpg": [
+          "PlantDoc-Dataset\\test\\Apple leaf\\Apple leaf (9).jpg",
+          "PlantDoc-Dataset\\train\\Apple leaf\\Apple leaf (9).jpg"
+        ],
+        "Apple rust leaf (1).jpg": [
+          "PlantDoc-Dataset\\test\\Apple rust leaf\\Apple rust leaf (1).jpg",
+          "PlantDoc-Dataset\\train\\Apple rust leaf\\Apple rust leaf (1).jpg"
+        ],
+        "Apple rust leaf (10).jpg": [
+          "PlantDoc-Dataset\\test\\Apple rust leaf\\Apple rust leaf (10).jpg",
+          "PlantDoc-Dataset\\train\\Apple rust leaf\\Apple rust leaf (10).jpg"
+        ],
+        "Apple rust leaf (2).jpg": [
+          "PlantDoc-Dataset\\test\\Apple rust leaf\\Apple rust leaf (2).jpg",
+          "PlantDoc-Dataset\\train\\Apple rust leaf\\Apple rust leaf (2).jpg"
+        ],
+        "Apple rust leaf (3).jpg": [
+          "PlantDoc-Dataset\\test\\Apple rust leaf\\Apple rust leaf (3).jpg",
+          "PlantDoc-Dataset\\train\\Apple rust leaf\\Apple rust leaf (3).jpg"
+        ],
+        "Apple rust leaf (4).jpg": [
+          "PlantDoc-Dataset\\test\\Apple rust leaf\\Apple rust leaf (4).jpg",
+          "PlantDoc-Dataset\\train\\Apple rust leaf\\Apple rust leaf (4).jpg"
+        ],
+        "Apple rust leaf (5).jpg": [
+          "PlantDoc-Dataset\\test\\Apple rust leaf\\Apple rust leaf (5).jpg",
+          "PlantDoc-Dataset\\train\\Apple rust leaf\\Apple rust leaf (5).jpg"
+        ],
+        "Apple rust leaf (6).jpg": [
+          "PlantDoc-Dataset\\test\\Apple rust leaf\\Apple rust leaf (6).jpg",
+          "PlantDoc-Dataset\\train\\Apple rust leaf\\Apple rust leaf (6).jpg"
+        ],
+        "Apple rust leaf (7).jpg": [
+          "PlantDoc-Dataset\\test\\Apple rust leaf\\Apple rust leaf (7).jpg",
+          "PlantDoc-Dataset\\train\\Apple rust leaf\\Apple rust leaf (7).jpg"
+        ],
+        "Apple rust leaf (8).jpg": [
+          "PlantDoc-Dataset\\test\\Apple rust leaf\\Apple rust leaf (8).jpg",
+          "PlantDoc-Dataset\\train\\Apple rust leaf\\Apple rust leaf (8).jpg"
+        ],
+        "Apple rust leaf (9).jpg": [
+          "PlantDoc-Dataset\\test\\Apple rust leaf\\Apple rust leaf (9).jpg",
+          "PlantDoc-Dataset\\train\\Apple rust leaf\\Apple rust leaf (9).jpg"
+        ],
+        "Bell_pepper leaf (1).jpg": [
+          "PlantDoc-Dataset\\test\\Bell_pepper leaf\\Bell_pepper leaf (1).jpg",
+          "PlantDoc-Dataset\\train\\Bell_pepper leaf\\Bell_pepper leaf (1).jpg"
+        ],
+        "Bell_pepper leaf (2).jpg": [
+          "PlantDoc-Dataset\\test\\Bell_pepper leaf\\Bell_pepper leaf (2).jpg",
+          "PlantDoc-Dataset\\train\\Bell_pepper leaf\\Bell_pepper leaf (2).jpg"
+        ],
+        "Bell_pepper leaf (3).jpg": [
+          "PlantDoc-Dataset\\test\\Bell_pepper leaf\\Bell_pepper leaf (3).jpg",
+          "PlantDoc-Dataset\\train\\Bell_pepper leaf\\Bell_pepper leaf (3).jpg"
+        ],
+        "Bell_pepper leaf (4).jpg": [
+          "PlantDoc-Dataset\\test\\Bell_pepper leaf\\Bell_pepper leaf (4).jpg",
+          "PlantDoc-Dataset\\train\\Bell_pepper leaf\\Bell_pepper leaf (4).jpg"
+        ],
+        "Bell_pepper leaf (5).jpg": [
+          "PlantDoc-Dataset\\test\\Bell_pepper leaf\\Bell_pepper leaf (5).jpg",
+          "PlantDoc-Dataset\\train\\Bell_pepper leaf\\Bell_pepper leaf (5).jpg"
+        ],
+        "Bell_pepper leaf (6).jpg": [
+          "PlantDoc-Dataset\\test\\Bell_pepper leaf\\Bell_pepper leaf (6).jpg",
+          "PlantDoc-Dataset\\train\\Bell_pepper leaf\\Bell_pepper leaf (6).jpg"
+        ],
+        "Bell_pepper leaf (7).jpg": [
+          "PlantDoc-Dataset\\test\\Bell_pepper leaf\\Bell_pepper leaf (7).jpg",
+          "PlantDoc-Dataset\\train\\Bell_pepper leaf\\Bell_pepper leaf (7).jpg"
+        ],
+        "Bell_pepper leaf (8).jpg": [
+          "PlantDoc-Dataset\\test\\Bell_pepper leaf\\Bell_pepper leaf (8).jpg",
+          "PlantDoc-Dataset\\train\\Bell_pepper leaf\\Bell_pepper leaf (8).jpg"
+        ],
+        "Bell_pepper leaf spot (1).jpg": [
+          "PlantDoc-Dataset\\test\\Bell_pepper leaf spot\\Bell_pepper leaf spot (1).jpg",
+          "PlantDoc-Dataset\\train\\Bell_pepper leaf spot\\Bell_pepper leaf spot (1).jpg"
+        ],
+        "Bell_pepper leaf spot (2).jpg": [
+          "PlantDoc-Dataset\\test\\Bell_pepper leaf spot\\Bell_pepper leaf spot (2).jpg",
+          "PlantDoc-Dataset\\train\\Bell_pepper leaf spot\\Bell_pepper leaf spot (2).jpg"
+        ],
+        "Bell_pepper leaf spot (3).jpg": [
+          "PlantDoc-Dataset\\test\\Bell_pepper leaf spot\\Bell_pepper leaf spot (3).jpg",
+          "PlantDoc-Dataset\\train\\Bell_pepper leaf spot\\Bell_pepper leaf spot (3).jpg"
+        ],
+        "Bell_pepper leaf spot (4).jpg": [
+          "PlantDoc-Dataset\\test\\Bell_pepper leaf spot\\Bell_pepper leaf spot (4).jpg",
+          "PlantDoc-Dataset\\train\\Bell_pepper leaf spot\\Bell_pepper leaf spot (4).jpg"
+        ],
+        "Bell_pepper leaf spot (5).jpg": [
+          "PlantDoc-Dataset\\test\\Bell_pepper leaf spot\\Bell_pepper leaf spot (5).jpg",
+          "PlantDoc-Dataset\\train\\Bell_pepper leaf spot\\Bell_pepper leaf spot (5).jpg"
+        ],
+        "Bell_pepper leaf spot (6).jpg": [
+          "PlantDoc-Dataset\\test\\Bell_pepper leaf spot\\Bell_pepper leaf spot (6).jpg",
+          "PlantDoc-Dataset\\train\\Bell_pepper leaf spot\\Bell_pepper leaf spot (6).jpg"
+        ],
+        "Bell_pepper leaf spot (7).jpg": [
+          "PlantDoc-Dataset\\test\\Bell_pepper leaf spot\\Bell_pepper leaf spot (7).jpg",
+          "PlantDoc-Dataset\\train\\Bell_pepper leaf spot\\Bell_pepper leaf spot (7).jpg"
+        ],
+        "Bell_pepper leaf spot (8).jpg": [
+          "PlantDoc-Dataset\\test\\Bell_pepper leaf spot\\Bell_pepper leaf spot (8).jpg",
+          "PlantDoc-Dataset\\train\\Bell_pepper leaf spot\\Bell_pepper leaf spot (8).jpg"
+        ],
+        "Bell_pepper leaf spot (9).jpg": [
+          "PlantDoc-Dataset\\test\\Bell_pepper leaf spot\\Bell_pepper leaf spot (9).jpg",
+          "PlantDoc-Dataset\\train\\Bell_pepper leaf spot\\Bell_pepper leaf spot (9).jpg"
+        ],
+        "Blueberry leaf (1).jpg": [
+          "PlantDoc-Dataset\\test\\Blueberry leaf\\Blueberry leaf (1).jpg",
+          "PlantDoc-Dataset\\train\\Blueberry leaf\\Blueberry leaf (1).jpg"
+        ],
+        "Blueberry leaf (10).jpg": [
+          "PlantDoc-Dataset\\test\\Blueberry leaf\\Blueberry leaf (10).jpg",
+          "PlantDoc-Dataset\\train\\Blueberry leaf\\Blueberry leaf (10).jpg"
+        ],
+        "Blueberry leaf (11).jpg": [
+          "PlantDoc-Dataset\\test\\Blueberry leaf\\Blueberry leaf (11).jpg",
+          "PlantDoc-Dataset\\train\\Blueberry leaf\\Blueberry leaf (11).jpg"
+        ],
+        "Blueberry leaf (2).jpg": [
+          "PlantDoc-Dataset\\test\\Blueberry leaf\\Blueberry leaf (2).jpg",
+          "PlantDoc-Dataset\\train\\Blueberry leaf\\Blueberry leaf (2).jpg"
+        ],
+        "Blueberry leaf (3).jpg": [
+          "PlantDoc-Dataset\\test\\Blueberry leaf\\Blueberry leaf (3).jpg",
+          "PlantDoc-Dataset\\train\\Blueberry leaf\\Blueberry leaf (3).jpg"
+        ],
+        "Blueberry leaf (4).jpg": [
+          "PlantDoc-Dataset\\test\\Blueberry leaf\\Blueberry leaf (4).jpg",
+          "PlantDoc-Dataset\\train\\Blueberry leaf\\Blueberry leaf (4).jpg"
+        ],
+        "Blueberry leaf (5).jpg": [
+          "PlantDoc-Dataset\\test\\Blueberry leaf\\Blueberry leaf (5).jpg",
+          "PlantDoc-Dataset\\train\\Blueberry leaf\\Blueberry leaf (5).jpg"
+        ],
+        "Blueberry leaf (6).jpg": [
+          "PlantDoc-Dataset\\test\\Blueberry leaf\\Blueberry leaf (6).jpg",
+          "PlantDoc-Dataset\\train\\Blueberry leaf\\Blueberry leaf (6).jpg"
+        ],
+        "Blueberry leaf (7).jpg": [
+          "PlantDoc-Dataset\\test\\Blueberry leaf\\Blueberry leaf (7).jpg",
+          "PlantDoc-Dataset\\train\\Blueberry leaf\\Blueberry leaf (7).jpg"
+        ],
+        "Blueberry leaf (8).jpg": [
+          "PlantDoc-Dataset\\test\\Blueberry leaf\\Blueberry leaf (8).jpg",
+          "PlantDoc-Dataset\\train\\Blueberry leaf\\Blueberry leaf (8).jpg"
+        ],
+        "Blueberry leaf (9).jpg": [
+          "PlantDoc-Dataset\\test\\Blueberry leaf\\Blueberry leaf (9).jpg",
+          "PlantDoc-Dataset\\train\\Blueberry leaf\\Blueberry leaf (9).jpg"
+        ],
+        "Cherry leaf (1).jpg": [
+          "PlantDoc-Dataset\\test\\Cherry leaf\\Cherry leaf (1).jpg",
+          "PlantDoc-Dataset\\train\\Cherry leaf\\Cherry leaf (1).jpg"
+        ],
+        "Cherry leaf (10).jpg": [
+          "PlantDoc-Dataset\\test\\Cherry leaf\\Cherry leaf (10).jpg",
+          "PlantDoc-Dataset\\train\\Cherry leaf\\Cherry leaf (10).jpg"
+        ],
+        "Cherry leaf (2).jpg": [
+          "PlantDoc-Dataset\\test\\Cherry leaf\\Cherry leaf (2).jpg",
+          "PlantDoc-Dataset\\train\\Cherry leaf\\Cherry leaf (2).jpg"
+        ],
+        "Cherry leaf (3).jpg": [
+          "PlantDoc-Dataset\\test\\Cherry leaf\\Cherry leaf (3).jpg",
+          "PlantDoc-Dataset\\train\\Cherry leaf\\Cherry leaf (3).jpg"
+        ],
+        "Cherry leaf (4).jpg": [
+          "PlantDoc-Dataset\\test\\Cherry leaf\\Cherry leaf (4).jpg",
+          "PlantDoc-Dataset\\train\\Cherry leaf\\Cherry leaf (4).jpg"
+        ],
+        "Cherry leaf (5).jpg": [
+          "PlantDoc-Dataset\\test\\Cherry leaf\\Cherry leaf (5).jpg",
+          "PlantDoc-Dataset\\train\\Cherry leaf\\Cherry leaf (5).jpg"
+        ],
+        "Cherry leaf (6).jpg": [
+          "PlantDoc-Dataset\\test\\Cherry leaf\\Cherry leaf (6).jpg",
+          "PlantDoc-Dataset\\train\\Cherry leaf\\Cherry leaf (6).jpg"
+        ],
+        "Cherry leaf (7).jpg": [
+          "PlantDoc-Dataset\\test\\Cherry leaf\\Cherry leaf (7).jpg",
+          "PlantDoc-Dataset\\train\\Cherry leaf\\Cherry leaf (7).jpg"
+        ],
+        "Cherry leaf (8).jpg": [
+          "PlantDoc-Dataset\\test\\Cherry leaf\\Cherry leaf (8).jpg",
+          "PlantDoc-Dataset\\train\\Cherry leaf\\Cherry leaf (8).jpg"
+        ],
+        "Cherry leaf (9).jpg": [
+          "PlantDoc-Dataset\\test\\Cherry leaf\\Cherry leaf (9).jpg",
+          "PlantDoc-Dataset\\train\\Cherry leaf\\Cherry leaf (9).jpg"
+        ],
+        "Corn Gray leaf spot (1).jpg": [
+          "PlantDoc-Dataset\\test\\Corn Gray leaf spot\\Corn Gray leaf spot (1).jpg",
+          "PlantDoc-Dataset\\train\\Corn Gray leaf spot\\Corn Gray leaf spot (1).jpg"
+        ],
+        "Corn Gray leaf spot (2).jpg": [
+          "PlantDoc-Dataset\\test\\Corn Gray leaf spot\\Corn Gray leaf spot (2).jpg",
+          "PlantDoc-Dataset\\train\\Corn Gray leaf spot\\Corn Gray leaf spot (2).jpg"
+        ],
+        "Corn Gray leaf spot (3).jpg": [
+          "PlantDoc-Dataset\\test\\Corn Gray leaf spot\\Corn Gray leaf spot (3).jpg",
+          "PlantDoc-Dataset\\train\\Corn Gray leaf spot\\Corn Gray leaf spot (3).jpg"
+        ],
+        "Corn Gray leaf spot (4).jpg": [
+          "PlantDoc-Dataset\\test\\Corn Gray leaf spot\\Corn Gray leaf spot (4).jpg",
+          "PlantDoc-Dataset\\train\\Corn Gray leaf spot\\Corn Gray leaf spot (4).jpg"
+        ],
+        "Corn leaf blight (1).jpg": [
+          "PlantDoc-Dataset\\test\\Corn leaf blight\\Corn leaf blight (1).jpg",
+          "PlantDoc-Dataset\\train\\Corn leaf blight\\Corn leaf blight (1).jpg"
+        ],
+        "Corn leaf blight (10).jpg": [
+          "PlantDoc-Dataset\\test\\Corn leaf blight\\Corn leaf blight (10).jpg",
+          "PlantDoc-Dataset\\train\\Corn leaf blight\\Corn leaf blight (10).jpg"
+        ],
+        "Corn leaf blight (11).jpg": [
+          "PlantDoc-Dataset\\test\\Corn leaf blight\\Corn leaf blight (11).jpg",
+          "PlantDoc-Dataset\\train\\Corn leaf blight\\Corn leaf blight (11).jpg"
+        ],
+        "Corn leaf blight (12).jpg": [
+          "PlantDoc-Dataset\\test\\Corn leaf blight\\Corn leaf blight (12).jpg",
+          "PlantDoc-Dataset\\train\\Corn leaf blight\\Corn leaf blight (12).jpg"
+        ],
+        "Corn leaf blight (2).jpg": [
+          "PlantDoc-Dataset\\test\\Corn leaf blight\\Corn leaf blight (2).jpg",
+          "PlantDoc-Dataset\\train\\Corn leaf blight\\Corn leaf blight (2).jpg"
+        ],
+        "Corn leaf blight (3).jpg": [
+          "PlantDoc-Dataset\\test\\Corn leaf blight\\Corn leaf blight (3).jpg",
+          "PlantDoc-Dataset\\train\\Corn leaf blight\\Corn leaf blight (3).jpg"
+        ],
+        "Corn leaf blight (4).jpg": [
+          "PlantDoc-Dataset\\test\\Corn leaf blight\\Corn leaf blight (4).jpg",
+          "PlantDoc-Dataset\\train\\Corn leaf blight\\Corn leaf blight (4).jpg"
+        ],
+        "Corn leaf blight (5).jpg": [
+          "PlantDoc-Dataset\\test\\Corn leaf blight\\Corn leaf blight (5).jpg",
+          "PlantDoc-Dataset\\train\\Corn leaf blight\\Corn leaf blight (5).jpg"
+        ],
+        "Corn leaf blight (6).jpg": [
+          "PlantDoc-Dataset\\test\\Corn leaf blight\\Corn leaf blight (6).jpg",
+          "PlantDoc-Dataset\\train\\Corn leaf blight\\Corn leaf blight (6).jpg"
+        ],
+        "Corn leaf blight (7).jpg": [
+          "PlantDoc-Dataset\\test\\Corn leaf blight\\Corn leaf blight (7).jpg",
+          "PlantDoc-Dataset\\train\\Corn leaf blight\\Corn leaf blight (7).jpg"
+        ],
+        "Corn leaf blight (8).jpg": [
+          "PlantDoc-Dataset\\test\\Corn leaf blight\\Corn leaf blight (8).jpg",
+          "PlantDoc-Dataset\\train\\Corn leaf blight\\Corn leaf blight (8).jpg"
+        ],
+        "Corn leaf blight (9).jpg": [
+          "PlantDoc-Dataset\\test\\Corn leaf blight\\Corn leaf blight (9).jpg",
+          "PlantDoc-Dataset\\train\\Corn leaf blight\\Corn leaf blight (9).jpg"
+        ],
+        "Corn rust leaf (1).jpg": [
+          "PlantDoc-Dataset\\test\\Corn rust leaf\\Corn rust leaf (1).jpg",
+          "PlantDoc-Dataset\\train\\Corn rust leaf\\Corn rust leaf (1).jpg"
+        ],
+        "Corn rust leaf (10).jpg": [
+          "PlantDoc-Dataset\\test\\Corn rust leaf\\Corn rust leaf (10).jpg",
+          "PlantDoc-Dataset\\train\\Corn rust leaf\\Corn rust leaf (10).jpg"
+        ],
+        "Corn rust leaf (2).jpg": [
+          "PlantDoc-Dataset\\test\\Corn rust leaf\\Corn rust leaf (2).jpg",
+          "PlantDoc-Dataset\\train\\Corn rust leaf\\Corn rust leaf (2).jpg"
+        ],
+        "Corn rust leaf (3).jpg": [
+          "PlantDoc-Dataset\\test\\Corn rust leaf\\Corn rust leaf (3).jpg",
+          "PlantDoc-Dataset\\train\\Corn rust leaf\\Corn rust leaf (3).jpg"
+        ],
+        "Corn rust leaf (4).jpg": [
+          "PlantDoc-Dataset\\test\\Corn rust leaf\\Corn rust leaf (4).jpg",
+          "PlantDoc-Dataset\\train\\Corn rust leaf\\Corn rust leaf (4).jpg"
+        ],
+        "Corn rust leaf (5).jpg": [
+          "PlantDoc-Dataset\\test\\Corn rust leaf\\Corn rust leaf (5).jpg",
+          "PlantDoc-Dataset\\train\\Corn rust leaf\\Corn rust leaf (5).jpg"
+        ],
+        "Corn rust leaf (6).jpg": [
+          "PlantDoc-Dataset\\test\\Corn rust leaf\\Corn rust leaf (6).jpg",
+          "PlantDoc-Dataset\\train\\Corn rust leaf\\Corn rust leaf (6).jpg"
+        ],
+        "Corn rust leaf (7).jpg": [
+          "PlantDoc-Dataset\\test\\Corn rust leaf\\Corn rust leaf (7).jpg",
+          "PlantDoc-Dataset\\train\\Corn rust leaf\\Corn rust leaf (7).jpg"
+        ],
+        "Corn rust leaf (8).jpg": [
+          "PlantDoc-Dataset\\test\\Corn rust leaf\\Corn rust leaf (8).jpg",
+          "PlantDoc-Dataset\\train\\Corn rust leaf\\Corn rust leaf (8).jpg"
+        ],
+        "Corn rust leaf (9).jpg": [
+          "PlantDoc-Dataset\\test\\Corn rust leaf\\Corn rust leaf (9).jpg",
+          "PlantDoc-Dataset\\train\\Corn rust leaf\\Corn rust leaf (9).jpg"
+        ],
+        "Peach leaf (1).jpg": [
+          "PlantDoc-Dataset\\test\\Peach leaf\\Peach leaf (1).jpg",
+          "PlantDoc-Dataset\\train\\Peach leaf\\Peach leaf (1).jpg"
+        ],
+        "Peach leaf (2).jpg": [
+          "PlantDoc-Dataset\\test\\Peach leaf\\Peach leaf (2).jpg",
+          "PlantDoc-Dataset\\train\\Peach leaf\\Peach leaf (2).jpg"
+        ],
+        "Peach leaf (3).jpg": [
+          "PlantDoc-Dataset\\test\\Peach leaf\\Peach leaf (3).jpg",
+          "PlantDoc-Dataset\\train\\Peach leaf\\Peach leaf (3).jpg"
+        ],
+        "Peach leaf (4).jpg": [
+          "PlantDoc-Dataset\\test\\Peach leaf\\Peach leaf (4).jpg",
+          "PlantDoc-Dataset\\train\\Peach leaf\\Peach leaf (4).jpg"
+        ],
+        "Peach leaf (5).jpg": [
+          "PlantDoc-Dataset\\test\\Peach leaf\\Peach leaf (5).jpg",
+          "PlantDoc-Dataset\\train\\Peach leaf\\Peach leaf (5).jpg"
+        ],
+        "Peach leaf (6).jpg": [
+          "PlantDoc-Dataset\\test\\Peach leaf\\Peach leaf (6).jpg",
+          "PlantDoc-Dataset\\train\\Peach leaf\\Peach leaf (6).jpg"
+        ],
+        "Peach leaf (7).jpg": [
+          "PlantDoc-Dataset\\test\\Peach leaf\\Peach leaf (7).jpg",
+          "PlantDoc-Dataset\\train\\Peach leaf\\Peach leaf (7).jpg"
+        ],
+        "Peach leaf (8).jpg": [
+          "PlantDoc-Dataset\\test\\Peach leaf\\Peach leaf (8).jpg",
+          "PlantDoc-Dataset\\train\\Peach leaf\\Peach leaf (8).jpg"
+        ],
+        "Peach leaf (9).jpg": [
+          "PlantDoc-Dataset\\test\\Peach leaf\\Peach leaf (9).jpg",
+          "PlantDoc-Dataset\\train\\Peach leaf\\Peach leaf (9).jpg"
+        ],
+        "Potato leaf early blight (1).jpg": [
+          "PlantDoc-Dataset\\test\\Potato leaf early blight\\Potato leaf early blight (1).jpg",
+          "PlantDoc-Dataset\\train\\Potato leaf early blight\\Potato leaf early blight (1).jpg"
+        ],
+        "Potato leaf early blight (2).jpg": [
+          "PlantDoc-Dataset\\test\\Potato leaf early blight\\Potato leaf early blight (2).jpg",
+          "PlantDoc-Dataset\\train\\Potato leaf early blight\\Potato leaf early blight (2).jpg"
+        ],
+        "Potato leaf early blight (3).jpg": [
+          "PlantDoc-Dataset\\test\\Potato leaf early blight\\Potato leaf early blight (3).jpg",
+          "PlantDoc-Dataset\\train\\Potato leaf early blight\\Potato leaf early blight (3).jpg"
+        ],
+        "Potato leaf early blight (4).jpg": [
+          "PlantDoc-Dataset\\test\\Potato leaf early blight\\Potato leaf early blight (4).jpg",
+          "PlantDoc-Dataset\\train\\Potato leaf early blight\\Potato leaf early blight (4).jpg"
+        ],
+        "Potato leaf early blight (5).jpg": [
+          "PlantDoc-Dataset\\test\\Potato leaf early blight\\Potato leaf early blight (5).jpg",
+          "PlantDoc-Dataset\\train\\Potato leaf early blight\\Potato leaf early blight (5).jpg"
+        ],
+        "Potato leaf early blight (6).jpg": [
+          "PlantDoc-Dataset\\test\\Potato leaf early blight\\Potato leaf early blight (6).jpg",
+          "PlantDoc-Dataset\\train\\Potato leaf early blight\\Potato leaf early blight (6).jpg"
+        ],
+        "Potato leaf early blight (7).jpg": [
+          "PlantDoc-Dataset\\test\\Potato leaf early blight\\Potato leaf early blight (7).jpg",
+          "PlantDoc-Dataset\\train\\Potato leaf early blight\\Potato leaf early blight (7).jpg"
+        ],
+        "Potato leaf early blight (8).jpg": [
+          "PlantDoc-Dataset\\test\\Potato leaf early blight\\Potato leaf early blight (8).jpg",
+          "PlantDoc-Dataset\\train\\Potato leaf early blight\\Potato leaf early blight (8).jpg"
+        ],
+        "Potato leaf late blight (1).jpg": [
+          "PlantDoc-Dataset\\test\\Potato leaf late blight\\Potato leaf late blight (1).jpg",
+          "PlantDoc-Dataset\\train\\Potato leaf late blight\\Potato leaf late blight (1).jpg"
+        ],
+        "Potato leaf late blight (2).jpg": [
+          "PlantDoc-Dataset\\test\\Potato leaf late blight\\Potato leaf late blight (2).jpg",
+          "PlantDoc-Dataset\\train\\Potato leaf late blight\\Potato leaf late blight (2).jpg"
+        ],
+        "Potato leaf late blight (3).jpg": [
+          "PlantDoc-Dataset\\test\\Potato leaf late blight\\Potato leaf late blight (3).jpg",
+          "PlantDoc-Dataset\\train\\Potato leaf late blight\\Potato leaf late blight (3).jpg"
+        ],
+        "Potato leaf late blight (4).jpg": [
+          "PlantDoc-Dataset\\test\\Potato leaf late blight\\Potato leaf late blight (4).jpg",
+          "PlantDoc-Dataset\\train\\Potato leaf late blight\\Potato leaf late blight (4).jpg"
+        ],
+        "Potato leaf late blight (5).jpg": [
+          "PlantDoc-Dataset\\test\\Potato leaf late blight\\Potato leaf late blight (5).jpg",
+          "PlantDoc-Dataset\\train\\Potato leaf late blight\\Potato leaf late blight (5).jpg"
+        ],
+        "Potato leaf late blight (6).jpg": [
+          "PlantDoc-Dataset\\test\\Potato leaf late blight\\Potato leaf late blight (6).jpg",
+          "PlantDoc-Dataset\\train\\Potato leaf late blight\\Potato leaf late blight (6).jpg"
+        ],
+        "Potato leaf late blight (7).jpg": [
+          "PlantDoc-Dataset\\test\\Potato leaf late blight\\Potato leaf late blight (7).jpg",
+          "PlantDoc-Dataset\\train\\Potato leaf late blight\\Potato leaf late blight (7).jpg"
+        ],
+        "Potato leaf late blight (8).jpg": [
+          "PlantDoc-Dataset\\test\\Potato leaf late blight\\Potato leaf late blight (8).jpg",
+          "PlantDoc-Dataset\\train\\Potato leaf late blight\\Potato leaf late blight (8).jpg"
+        ],
+        "Raspberry leaf (1).jpg": [
+          "PlantDoc-Dataset\\test\\Raspberry leaf\\Raspberry leaf (1).jpg",
+          "PlantDoc-Dataset\\train\\Raspberry leaf\\Raspberry leaf (1).jpg"
+        ],
+        "Raspberry leaf (2).jpg": [
+          "PlantDoc-Dataset\\test\\Raspberry leaf\\Raspberry leaf (2).jpg",
+          "PlantDoc-Dataset\\train\\Raspberry leaf\\Raspberry leaf (2).jpg"
+        ],
+        "Raspberry leaf (3).jpg": [
+          "PlantDoc-Dataset\\test\\Raspberry leaf\\Raspberry leaf (3).jpg",
+          "PlantDoc-Dataset\\train\\Raspberry leaf\\Raspberry leaf (3).jpg"
+        ],
+        "Raspberry leaf (4).jpg": [
+          "PlantDoc-Dataset\\test\\Raspberry leaf\\Raspberry leaf (4).jpg",
+          "PlantDoc-Dataset\\train\\Raspberry leaf\\Raspberry leaf (4).jpg"
+        ],
+        "Raspberry leaf (5).jpg": [
+          "PlantDoc-Dataset\\test\\Raspberry leaf\\Raspberry leaf (5).jpg",
+          "PlantDoc-Dataset\\train\\Raspberry leaf\\Raspberry leaf (5).jpg"
+        ],
+        "Raspberry leaf (6).jpg": [
+          "PlantDoc-Dataset\\test\\Raspberry leaf\\Raspberry leaf (6).jpg",
+          "PlantDoc-Dataset\\train\\Raspberry leaf\\Raspberry leaf (6).jpg"
+        ],
+        "Raspberry leaf (7).jpg": [
+          "PlantDoc-Dataset\\test\\Raspberry leaf\\Raspberry leaf (7).jpg",
+          "PlantDoc-Dataset\\train\\Raspberry leaf\\Raspberry leaf (7).jpg"
+        ],
+        "Soyabean leaf (1).jpg": [
+          "PlantDoc-Dataset\\test\\Soyabean leaf\\Soyabean leaf (1).jpg",
+          "PlantDoc-Dataset\\train\\Soyabean leaf\\Soyabean leaf (1).jpg"
+        ],
+        "Soyabean leaf (2).jpg": [
+          "PlantDoc-Dataset\\test\\Soyabean leaf\\Soyabean leaf (2).jpg",
+          "PlantDoc-Dataset\\train\\Soyabean leaf\\Soyabean leaf (2).jpg"
+        ],
+        "Soyabean leaf (3).jpg": [
+          "PlantDoc-Dataset\\test\\Soyabean leaf\\Soyabean leaf (3).jpg",
+          "PlantDoc-Dataset\\train\\Soyabean leaf\\Soyabean leaf (3).jpg"
+        ],
+        "Soyabean leaf (4).jpg": [
+          "PlantDoc-Dataset\\test\\Soyabean leaf\\Soyabean leaf (4).jpg",
+          "PlantDoc-Dataset\\train\\Soyabean leaf\\Soyabean leaf (4).jpg"
+        ],
+        "Soyabean leaf (5).jpg": [
+          "PlantDoc-Dataset\\test\\Soyabean leaf\\Soyabean leaf (5).jpg",
+          "PlantDoc-Dataset\\train\\Soyabean leaf\\Soyabean leaf (5).jpg"
+        ],
+        "Soyabean leaf (6).jpg": [
+          "PlantDoc-Dataset\\test\\Soyabean leaf\\Soyabean leaf (6).jpg",
+          "PlantDoc-Dataset\\train\\Soyabean leaf\\Soyabean leaf (6).jpg"
+        ],
+        "Soyabean leaf (7).jpg": [
+          "PlantDoc-Dataset\\test\\Soyabean leaf\\Soyabean leaf (7).jpg",
+          "PlantDoc-Dataset\\train\\Soyabean leaf\\Soyabean leaf (7).jpg"
+        ],
+        "Soyabean leaf (8).jpg": [
+          "PlantDoc-Dataset\\test\\Soyabean leaf\\Soyabean leaf (8).jpg",
+          "PlantDoc-Dataset\\train\\Soyabean leaf\\Soyabean leaf (8).jpg"
+        ],
+        "Squash Powdery mildew leaf (1).jpg": [
+          "PlantDoc-Dataset\\test\\Squash Powdery mildew leaf\\Squash Powdery mildew leaf (1).jpg",
+          "PlantDoc-Dataset\\train\\Squash Powdery mildew leaf\\Squash Powdery mildew leaf (1).jpg"
+        ],
+        "Squash Powdery mildew leaf (2).jpg": [
+          "PlantDoc-Dataset\\test\\Squash Powdery mildew leaf\\Squash Powdery mildew leaf (2).jpg",
+          "PlantDoc-Dataset\\train\\Squash Powdery mildew leaf\\Squash Powdery mildew leaf (2).jpg"
+        ],
+        "Squash Powdery mildew leaf (3).jpg": [
+          "PlantDoc-Dataset\\test\\Squash Powdery mildew leaf\\Squash Powdery mildew leaf (3).jpg",
+          "PlantDoc-Dataset\\train\\Squash Powdery mildew leaf\\Squash Powdery mildew leaf (3).jpg"
+        ],
+        "Squash Powdery mildew leaf (4).jpg": [
+          "PlantDoc-Dataset\\test\\Squash Powdery mildew leaf\\Squash Powdery mildew leaf (4).jpg",
+          "PlantDoc-Dataset\\train\\Squash Powdery mildew leaf\\Squash Powdery mildew leaf (4).jpg"
+        ],
+        "Squash Powdery mildew leaf (5).jpg": [
+          "PlantDoc-Dataset\\test\\Squash Powdery mildew leaf\\Squash Powdery mildew leaf (5).jpg",
+          "PlantDoc-Dataset\\train\\Squash Powdery mildew leaf\\Squash Powdery mildew leaf (5).jpg"
+        ],
+        "Squash Powdery mildew leaf (6).jpg": [
+          "PlantDoc-Dataset\\test\\Squash Powdery mildew leaf\\Squash Powdery mildew leaf (6).jpg",
+          "PlantDoc-Dataset\\train\\Squash Powdery mildew leaf\\Squash Powdery mildew leaf (6).jpg"
+        ],
+        "Strawberry leaf (1).jpg": [
+          "PlantDoc-Dataset\\test\\Strawberry leaf\\Strawberry leaf (1).jpg",
+          "PlantDoc-Dataset\\train\\Strawberry leaf\\Strawberry leaf (1).jpg"
+        ],
+        "Strawberry leaf (2).jpg": [
+          "PlantDoc-Dataset\\test\\Strawberry leaf\\Strawberry leaf (2).jpg",
+          "PlantDoc-Dataset\\train\\Strawberry leaf\\Strawberry leaf (2).jpg"
+        ],
+        "Strawberry leaf (3).jpg": [
+          "PlantDoc-Dataset\\test\\Strawberry leaf\\Strawberry leaf (3).jpg",
+          "PlantDoc-Dataset\\train\\Strawberry leaf\\Strawberry leaf (3).jpg"
+        ],
+        "Strawberry leaf (4).jpg": [
+          "PlantDoc-Dataset\\test\\Strawberry leaf\\Strawberry leaf (4).jpg",
+          "PlantDoc-Dataset\\train\\Strawberry leaf\\Strawberry leaf (4).jpg"
+        ],
+        "Strawberry leaf (5).jpg": [
+          "PlantDoc-Dataset\\test\\Strawberry leaf\\Strawberry leaf (5).jpg",
+          "PlantDoc-Dataset\\train\\Strawberry leaf\\Strawberry leaf (5).jpg"
+        ],
+        "Strawberry leaf (6).jpg": [
+          "PlantDoc-Dataset\\test\\Strawberry leaf\\Strawberry leaf (6).jpg",
+          "PlantDoc-Dataset\\train\\Strawberry leaf\\Strawberry leaf (6).jpg"
+        ],
+        "Strawberry leaf (7).jpg": [
+          "PlantDoc-Dataset\\test\\Strawberry leaf\\Strawberry leaf (7).jpg",
+          "PlantDoc-Dataset\\train\\Strawberry leaf\\Strawberry leaf (7).jpg"
+        ],
+        "Strawberry leaf (8).jpg": [
+          "PlantDoc-Dataset\\test\\Strawberry leaf\\Strawberry leaf (8).jpg",
+          "PlantDoc-Dataset\\train\\Strawberry leaf\\Strawberry leaf (8).jpg"
+        ],
+        "Tomato Early blight leaf (1).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato Early blight leaf\\Tomato Early blight leaf (1).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Early blight leaf\\Tomato Early blight leaf (1).jpg"
+        ],
+        "Tomato Early blight leaf (2).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato Early blight leaf\\Tomato Early blight leaf (2).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Early blight leaf\\Tomato Early blight leaf (2).jpg"
+        ],
+        "Tomato Early blight leaf (3).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato Early blight leaf\\Tomato Early blight leaf (3).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Early blight leaf\\Tomato Early blight leaf (3).jpg"
+        ],
+        "Tomato Early blight leaf (4).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato Early blight leaf\\Tomato Early blight leaf (4).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Early blight leaf\\Tomato Early blight leaf (4).jpg"
+        ],
+        "Tomato Early blight leaf (5).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato Early blight leaf\\Tomato Early blight leaf (5).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Early blight leaf\\Tomato Early blight leaf (5).jpg"
+        ],
+        "Tomato Early blight leaf (6).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato Early blight leaf\\Tomato Early blight leaf (6).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Early blight leaf\\Tomato Early blight leaf (6).jpg"
+        ],
+        "Tomato Early blight leaf (7).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato Early blight leaf\\Tomato Early blight leaf (7).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Early blight leaf\\Tomato Early blight leaf (7).jpg"
+        ],
+        "Tomato Early blight leaf (8).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato Early blight leaf\\Tomato Early blight leaf (8).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Early blight leaf\\Tomato Early blight leaf (8).jpg"
+        ],
+        "Tomato Early blight leaf (9).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato Early blight leaf\\Tomato Early blight leaf (9).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Early blight leaf\\Tomato Early blight leaf (9).jpg"
+        ],
+        "Tomato Septoria leaf spot (1).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (1).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (1).jpg"
+        ],
+        "Tomato Septoria leaf spot (10).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (10).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (10).jpg"
+        ],
+        "Tomato Septoria leaf spot (11).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (11).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (11).jpg"
+        ],
+        "Tomato Septoria leaf spot (2).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (2).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (2).jpg"
+        ],
+        "Tomato Septoria leaf spot (3).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (3).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (3).jpg"
+        ],
+        "Tomato Septoria leaf spot (4).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (4).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (4).jpg"
+        ],
+        "Tomato Septoria leaf spot (5).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (5).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (5).jpg"
+        ],
+        "Tomato Septoria leaf spot (6).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (6).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (6).jpg"
+        ],
+        "Tomato Septoria leaf spot (7).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (7).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (7).jpg"
+        ],
+        "Tomato Septoria leaf spot (8).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (8).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (8).jpg"
+        ],
+        "Tomato Septoria leaf spot (9).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (9).jpg",
+          "PlantDoc-Dataset\\train\\Tomato Septoria leaf spot\\Tomato Septoria leaf spot (9).jpg"
+        ],
+        "Tomato leaf (1).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf\\Tomato leaf (1).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf\\Tomato leaf (1).jpg"
+        ],
+        "Tomato leaf (2).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf\\Tomato leaf (2).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf\\Tomato leaf (2).jpg"
+        ],
+        "Tomato leaf (3).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf\\Tomato leaf (3).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf\\Tomato leaf (3).jpg"
+        ],
+        "Tomato leaf (4).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf\\Tomato leaf (4).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf\\Tomato leaf (4).jpg"
+        ],
+        "Tomato leaf (5).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf\\Tomato leaf (5).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf\\Tomato leaf (5).jpg"
+        ],
+        "Tomato leaf (6).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf\\Tomato leaf (6).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf\\Tomato leaf (6).jpg"
+        ],
+        "Tomato leaf (7).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf\\Tomato leaf (7).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf\\Tomato leaf (7).jpg"
+        ],
+        "Tomato leaf (8).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf\\Tomato leaf (8).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf\\Tomato leaf (8).jpg"
+        ],
+        "Tomato leaf bacterial spot (1).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf bacterial spot\\Tomato leaf bacterial spot (1).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf bacterial spot\\Tomato leaf bacterial spot (1).jpg"
+        ],
+        "Tomato leaf bacterial spot (2).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf bacterial spot\\Tomato leaf bacterial spot (2).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf bacterial spot\\Tomato leaf bacterial spot (2).jpg"
+        ],
+        "Tomato leaf bacterial spot (3).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf bacterial spot\\Tomato leaf bacterial spot (3).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf bacterial spot\\Tomato leaf bacterial spot (3).jpg"
+        ],
+        "Tomato leaf bacterial spot (4).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf bacterial spot\\Tomato leaf bacterial spot (4).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf bacterial spot\\Tomato leaf bacterial spot (4).jpg"
+        ],
+        "Tomato leaf bacterial spot (5).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf bacterial spot\\Tomato leaf bacterial spot (5).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf bacterial spot\\Tomato leaf bacterial spot (5).jpg"
+        ],
+        "Tomato leaf bacterial spot (6).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf bacterial spot\\Tomato leaf bacterial spot (6).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf bacterial spot\\Tomato leaf bacterial spot (6).jpg"
+        ],
+        "Tomato leaf bacterial spot (7).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf bacterial spot\\Tomato leaf bacterial spot (7).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf bacterial spot\\Tomato leaf bacterial spot (7).jpg"
+        ],
+        "Tomato leaf bacterial spot (8).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf bacterial spot\\Tomato leaf bacterial spot (8).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf bacterial spot\\Tomato leaf bacterial spot (8).jpg"
+        ],
+        "Tomato leaf bacterial spot (9).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf bacterial spot\\Tomato leaf bacterial spot (9).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf bacterial spot\\Tomato leaf bacterial spot (9).jpg"
+        ],
+        "Tomato leaf late blight (1).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf late blight\\Tomato leaf late blight (1).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf late blight\\Tomato leaf late blight (1).jpg"
+        ],
+        "Tomato leaf late blight (10).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf late blight\\Tomato leaf late blight (10).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf late blight\\Tomato leaf late blight (10).jpg"
+        ],
+        "Tomato leaf late blight (2).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf late blight\\Tomato leaf late blight (2).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf late blight\\Tomato leaf late blight (2).jpg"
+        ],
+        "Tomato leaf late blight (3).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf late blight\\Tomato leaf late blight (3).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf late blight\\Tomato leaf late blight (3).jpg"
+        ],
+        "Tomato leaf late blight (4).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf late blight\\Tomato leaf late blight (4).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf late blight\\Tomato leaf late blight (4).jpg"
+        ],
+        "Tomato leaf late blight (5).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf late blight\\Tomato leaf late blight (5).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf late blight\\Tomato leaf late blight (5).jpg"
+        ],
+        "Tomato leaf late blight (6).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf late blight\\Tomato leaf late blight (6).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf late blight\\Tomato leaf late blight (6).jpg"
+        ],
+        "Tomato leaf late blight (7).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf late blight\\Tomato leaf late blight (7).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf late blight\\Tomato leaf late blight (7).jpg"
+        ],
+        "Tomato leaf late blight (8).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf late blight\\Tomato leaf late blight (8).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf late blight\\Tomato leaf late blight (8).jpg"
+        ],
+        "Tomato leaf late blight (9).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf late blight\\Tomato leaf late blight (9).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf late blight\\Tomato leaf late blight (9).jpg"
+        ],
+        "Tomato leaf mosaic virus (1).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf mosaic virus\\Tomato leaf mosaic virus (1).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf mosaic virus\\Tomato leaf mosaic virus (1).jpg"
+        ],
+        "Tomato leaf mosaic virus (10).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf mosaic virus\\Tomato leaf mosaic virus (10).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf mosaic virus\\Tomato leaf mosaic virus (10).jpg"
+        ],
+        "Tomato leaf mosaic virus (2).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf mosaic virus\\Tomato leaf mosaic virus (2).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf mosaic virus\\Tomato leaf mosaic virus (2).jpg"
+        ],
+        "Tomato leaf mosaic virus (3).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf mosaic virus\\Tomato leaf mosaic virus (3).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf mosaic virus\\Tomato leaf mosaic virus (3).jpg"
+        ],
+        "Tomato leaf mosaic virus (4).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf mosaic virus\\Tomato leaf mosaic virus (4).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf mosaic virus\\Tomato leaf mosaic virus (4).jpg"
+        ],
+        "Tomato leaf mosaic virus (5).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf mosaic virus\\Tomato leaf mosaic virus (5).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf mosaic virus\\Tomato leaf mosaic virus (5).jpg"
+        ],
+        "Tomato leaf mosaic virus (6).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf mosaic virus\\Tomato leaf mosaic virus (6).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf mosaic virus\\Tomato leaf mosaic virus (6).jpg"
+        ],
+        "Tomato leaf mosaic virus (7).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf mosaic virus\\Tomato leaf mosaic virus (7).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf mosaic virus\\Tomato leaf mosaic virus (7).jpg"
+        ],
+        "Tomato leaf mosaic virus (8).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf mosaic virus\\Tomato leaf mosaic virus (8).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf mosaic virus\\Tomato leaf mosaic virus (8).jpg"
+        ],
+        "Tomato leaf mosaic virus (9).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf mosaic virus\\Tomato leaf mosaic virus (9).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf mosaic virus\\Tomato leaf mosaic virus (9).jpg"
+        ],
+        "Tomato leaf yellow virus (1).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf yellow virus\\Tomato leaf yellow virus (1).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf yellow virus\\Tomato leaf yellow virus (1).jpg"
+        ],
+        "Tomato leaf yellow virus (2).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf yellow virus\\Tomato leaf yellow virus (2).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf yellow virus\\Tomato leaf yellow virus (2).jpg"
+        ],
+        "Tomato leaf yellow virus (3).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf yellow virus\\Tomato leaf yellow virus (3).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf yellow virus\\Tomato leaf yellow virus (3).jpg"
+        ],
+        "Tomato leaf yellow virus (4).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf yellow virus\\Tomato leaf yellow virus (4).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf yellow virus\\Tomato leaf yellow virus (4).jpg"
+        ],
+        "Tomato leaf yellow virus (5).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf yellow virus\\Tomato leaf yellow virus (5).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf yellow virus\\Tomato leaf yellow virus (5).jpg"
+        ],
+        "Tomato leaf yellow virus (6).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato leaf yellow virus\\Tomato leaf yellow virus (6).jpg",
+          "PlantDoc-Dataset\\train\\Tomato leaf yellow virus\\Tomato leaf yellow virus (6).jpg"
+        ],
+        "Tomato mold leaf (1).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato mold leaf\\Tomato mold leaf (1).jpg",
+          "PlantDoc-Dataset\\train\\Tomato mold leaf\\Tomato mold leaf (1).jpg"
+        ],
+        "Tomato mold leaf (2).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato mold leaf\\Tomato mold leaf (2).jpg",
+          "PlantDoc-Dataset\\train\\Tomato mold leaf\\Tomato mold leaf (2).jpg"
+        ],
+        "Tomato mold leaf (3).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato mold leaf\\Tomato mold leaf (3).jpg",
+          "PlantDoc-Dataset\\train\\Tomato mold leaf\\Tomato mold leaf (3).jpg"
+        ],
+        "Tomato mold leaf (4).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato mold leaf\\Tomato mold leaf (4).jpg",
+          "PlantDoc-Dataset\\train\\Tomato mold leaf\\Tomato mold leaf (4).jpg"
+        ],
+        "Tomato mold leaf (5).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato mold leaf\\Tomato mold leaf (5).jpg",
+          "PlantDoc-Dataset\\train\\Tomato mold leaf\\Tomato mold leaf (5).jpg"
+        ],
+        "Tomato mold leaf (6).jpg": [
+          "PlantDoc-Dataset\\test\\Tomato mold leaf\\Tomato mold leaf (6).jpg",
+          "PlantDoc-Dataset\\train\\Tomato mold leaf\\Tomato mold leaf (6).jpg"
+        ],
+        "grape leaf (1).jpg": [
+          "PlantDoc-Dataset\\test\\grape leaf\\grape leaf (1).jpg",
+          "PlantDoc-Dataset\\train\\grape leaf\\grape leaf (1).jpg"
+        ],
+        "grape leaf (10).jpg": [
+          "PlantDoc-Dataset\\test\\grape leaf\\grape leaf (10).jpg",
+          "PlantDoc-Dataset\\train\\grape leaf\\grape leaf (10).jpg"
+        ],
+        "grape leaf (11).jpg": [
+          "PlantDoc-Dataset\\test\\grape leaf\\grape leaf (11).jpg",
+          "PlantDoc-Dataset\\train\\grape leaf\\grape leaf (11).jpg"
+        ],
+        "grape leaf (12).jpg": [
+          "PlantDoc-Dataset\\test\\grape leaf\\grape leaf (12).jpg",
+          "PlantDoc-Dataset\\train\\grape leaf\\grape leaf (12).jpg"
+        ],
+        "grape leaf (2).jpg": [
+          "PlantDoc-Dataset\\test\\grape leaf\\grape leaf (2).jpg",
+          "PlantDoc-Dataset\\train\\grape leaf\\grape leaf (2).jpg"
+        ],
+        "grape leaf (3).jpg": [
+          "PlantDoc-Dataset\\test\\grape leaf\\grape leaf (3).jpg",
+          "PlantDoc-Dataset\\train\\grape leaf\\grape leaf (3).jpg"
+        ],
+        "grape leaf (4).jpg": [
+          "PlantDoc-Dataset\\test\\grape leaf\\grape leaf (4).jpg",
+          "PlantDoc-Dataset\\train\\grape leaf\\grape leaf (4).jpg"
+        ],
+        "grape leaf (5).jpg": [
+          "PlantDoc-Dataset\\test\\grape leaf\\grape leaf (5).jpg",
+          "PlantDoc-Dataset\\train\\grape leaf\\grape leaf (5).jpg"
+        ],
+        "grape leaf (6).jpg": [
+          "PlantDoc-Dataset\\test\\grape leaf\\grape leaf (6).jpg",
+          "PlantDoc-Dataset\\train\\grape leaf\\grape leaf (6).jpg"
+        ],
+        "grape leaf (7).jpg": [
+          "PlantDoc-Dataset\\test\\grape leaf\\grape leaf (7).jpg",
+          "PlantDoc-Dataset\\train\\grape leaf\\grape leaf (7).jpg"
+        ],
+        "grape leaf (8).jpg": [
+          "PlantDoc-Dataset\\test\\grape leaf\\grape leaf (8).jpg",
+          "PlantDoc-Dataset\\train\\grape leaf\\grape leaf (8).jpg"
+        ],
+        "grape leaf (9).jpg": [
+          "PlantDoc-Dataset\\test\\grape leaf\\grape leaf (9).jpg",
+          "PlantDoc-Dataset\\train\\grape leaf\\grape leaf (9).jpg"
+        ],
+        "grape leaf black rot (1).jpg": [
+          "PlantDoc-Dataset\\test\\grape leaf black rot\\grape leaf black rot (1).jpg",
+          "PlantDoc-Dataset\\train\\grape leaf black rot\\grape leaf black rot (1).jpg"
+        ],
+        "grape leaf black rot (2).jpg": [
+          "PlantDoc-Dataset\\test\\grape leaf black rot\\grape leaf black rot (2).jpg",
+          "PlantDoc-Dataset\\train\\grape leaf black rot\\grape leaf black rot (2).jpg"
+        ],
+        "grape leaf black rot (3).jpg": [
+          "PlantDoc-Dataset\\test\\grape leaf black rot\\grape leaf black rot (3).jpg",
+          "PlantDoc-Dataset\\train\\grape leaf black rot\\grape leaf black rot (3).jpg"
+        ],
+        "grape leaf black rot (4).jpg": [
+          "PlantDoc-Dataset\\test\\grape leaf black rot\\grape leaf black rot (4).jpg",
+          "PlantDoc-Dataset\\train\\grape leaf black rot\\grape leaf black rot (4).jpg"
+        ],
+        "grape leaf black rot (5).jpg": [
+          "PlantDoc-Dataset\\test\\grape leaf black rot\\grape leaf black rot (5).jpg",
+          "PlantDoc-Dataset\\train\\grape leaf black rot\\grape leaf black rot (5).jpg"
+        ],
+        "grape leaf black rot (6).jpg": [
+          "PlantDoc-Dataset\\test\\grape leaf black rot\\grape leaf black rot (6).jpg",
+          "PlantDoc-Dataset\\train\\grape leaf black rot\\grape leaf black rot (6).jpg"
+        ],
+        "grape leaf black rot (7).jpg": [
+          "PlantDoc-Dataset\\test\\grape leaf black rot\\grape leaf black rot (7).jpg",
+          "PlantDoc-Dataset\\train\\grape leaf black rot\\grape leaf black rot (7).jpg"
+        ],
+        "grape leaf black rot (8).jpg": [
+          "PlantDoc-Dataset\\test\\grape leaf black rot\\grape leaf black rot (8).jpg",
+          "PlantDoc-Dataset\\train\\grape leaf black rot\\grape leaf black rot (8).jpg"
+        ]
+      },
+      "max_directory_depth": 3
+    },
+    "plantvillage": {
+      "dataset_name": "plantvillage",
+      "dataset_path": "C:\\Projects\\PlantDiseaseAI\\datasets\\external\\plantvillage",
+      "total_images": 54305,
+      "total_classes": 76,
+      "class_names": [
+        "PlantVillage\\train\\Apple___Apple_scab",
+        "PlantVillage\\train\\Apple___Black_rot",
+        "PlantVillage\\train\\Apple___Cedar_apple_rust",
+        "PlantVillage\\train\\Apple___healthy",
+        "PlantVillage\\train\\Blueberry___healthy",
+        "PlantVillage\\train\\Cherry_(including_sour)___Powdery_mildew",
+        "PlantVillage\\train\\Cherry_(including_sour)___healthy",
+        "PlantVillage\\train\\Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+        "PlantVillage\\train\\Corn_(maize)___Common_rust_",
+        "PlantVillage\\train\\Corn_(maize)___Northern_Leaf_Blight",
+        "PlantVillage\\train\\Corn_(maize)___healthy",
+        "PlantVillage\\train\\Grape___Black_rot",
+        "PlantVillage\\train\\Grape___Esca_(Black_Measles)",
+        "PlantVillage\\train\\Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+        "PlantVillage\\train\\Grape___healthy",
+        "PlantVillage\\train\\Orange___Haunglongbing_(Citrus_greening)",
+        "PlantVillage\\train\\Peach___Bacterial_spot",
+        "PlantVillage\\train\\Peach___healthy",
+        "PlantVillage\\train\\Pepper,_bell___Bacterial_spot",
+        "PlantVillage\\train\\Pepper,_bell___healthy",
+        "PlantVillage\\train\\Potato___Early_blight",
+        "PlantVillage\\train\\Potato___Late_blight",
+        "PlantVillage\\train\\Potato___healthy",
+        "PlantVillage\\train\\Raspberry___healthy",
+        "PlantVillage\\train\\Soybean___healthy",
+        "PlantVillage\\train\\Squash___Powdery_mildew",
+        "PlantVillage\\train\\Strawberry___Leaf_scorch",
+        "PlantVillage\\train\\Strawberry___healthy",
+        "PlantVillage\\train\\Tomato___Bacterial_spot",
+        "PlantVillage\\train\\Tomato___Early_blight",
+        "PlantVillage\\train\\Tomato___Late_blight",
+        "PlantVillage\\train\\Tomato___Leaf_Mold",
+        "PlantVillage\\train\\Tomato___Septoria_leaf_spot",
+        "PlantVillage\\train\\Tomato___Spider_mites Two-spotted_spider_mite",
+        "PlantVillage\\train\\Tomato___Target_Spot",
+        "PlantVillage\\train\\Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+        "PlantVillage\\train\\Tomato___Tomato_mosaic_virus",
+        "PlantVillage\\train\\Tomato___healthy",
+        "PlantVillage\\val\\Apple___Apple_scab",
+        "PlantVillage\\val\\Apple___Black_rot",
+        "PlantVillage\\val\\Apple___Cedar_apple_rust",
+        "PlantVillage\\val\\Apple___healthy",
+        "PlantVillage\\val\\Blueberry___healthy",
+        "PlantVillage\\val\\Cherry_(including_sour)___Powdery_mildew",
+        "PlantVillage\\val\\Cherry_(including_sour)___healthy",
+        "PlantVillage\\val\\Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+        "PlantVillage\\val\\Corn_(maize)___Common_rust_",
+        "PlantVillage\\val\\Corn_(maize)___Northern_Leaf_Blight",
+        "PlantVillage\\val\\Corn_(maize)___healthy",
+        "PlantVillage\\val\\Grape___Black_rot",
+        "PlantVillage\\val\\Grape___Esca_(Black_Measles)",
+        "PlantVillage\\val\\Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+        "PlantVillage\\val\\Grape___healthy",
+        "PlantVillage\\val\\Orange___Haunglongbing_(Citrus_greening)",
+        "PlantVillage\\val\\Peach___Bacterial_spot",
+        "PlantVillage\\val\\Peach___healthy",
+        "PlantVillage\\val\\Pepper,_bell___Bacterial_spot",
+        "PlantVillage\\val\\Pepper,_bell___healthy",
+        "PlantVillage\\val\\Potato___Early_blight",
+        "PlantVillage\\val\\Potato___Late_blight",
+        "PlantVillage\\val\\Potato___healthy",
+        "PlantVillage\\val\\Raspberry___healthy",
+        "PlantVillage\\val\\Soybean___healthy",
+        "PlantVillage\\val\\Squash___Powdery_mildew",
+        "PlantVillage\\val\\Strawberry___Leaf_scorch",
+        "PlantVillage\\val\\Strawberry___healthy",
+        "PlantVillage\\val\\Tomato___Bacterial_spot",
+        "PlantVillage\\val\\Tomato___Early_blight",
+        "PlantVillage\\val\\Tomato___Late_blight",
+        "PlantVillage\\val\\Tomato___Leaf_Mold",
+        "PlantVillage\\val\\Tomato___Septoria_leaf_spot",
+        "PlantVillage\\val\\Tomato___Spider_mites Two-spotted_spider_mite",
+        "PlantVillage\\val\\Tomato___Target_Spot",
+        "PlantVillage\\val\\Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+        "PlantVillage\\val\\Tomato___Tomato_mosaic_virus",
+        "PlantVillage\\val\\Tomato___healthy"
+      ],
+      "images_per_class": {
+        "PlantVillage\\train\\Apple___Apple_scab": 504,
+        "PlantVillage\\train\\Apple___Black_rot": 496,
+        "PlantVillage\\train\\Apple___Cedar_apple_rust": 220,
+        "PlantVillage\\train\\Apple___healthy": 1316,
+        "PlantVillage\\train\\Blueberry___healthy": 1202,
+        "PlantVillage\\train\\Cherry_(including_sour)___healthy": 684,
+        "PlantVillage\\train\\Cherry_(including_sour)___Powdery_mildew": 842,
+        "PlantVillage\\train\\Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": 410,
+        "PlantVillage\\train\\Corn_(maize)___Common_rust_": 953,
+        "PlantVillage\\train\\Corn_(maize)___healthy": 929,
+        "PlantVillage\\train\\Corn_(maize)___Northern_Leaf_Blight": 788,
+        "PlantVillage\\train\\Grape___Black_rot": 944,
+        "PlantVillage\\train\\Grape___Esca_(Black_Measles)": 1107,
+        "PlantVillage\\train\\Grape___healthy": 339,
+        "PlantVillage\\train\\Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": 861,
+        "PlantVillage\\train\\Orange___Haunglongbing_(Citrus_greening)": 4405,
+        "PlantVillage\\train\\Peach___Bacterial_spot": 1838,
+        "PlantVillage\\train\\Peach___healthy": 288,
+        "PlantVillage\\train\\Pepper,_bell___Bacterial_spot": 797,
+        "PlantVillage\\train\\Pepper,_bell___healthy": 1183,
+        "PlantVillage\\train\\Potato___Early_blight": 800,
+        "PlantVillage\\train\\Potato___healthy": 121,
+        "PlantVillage\\train\\Potato___Late_blight": 800,
+        "PlantVillage\\train\\Raspberry___healthy": 297,
+        "PlantVillage\\train\\Soybean___healthy": 4072,
+        "PlantVillage\\train\\Squash___Powdery_mildew": 1468,
+        "PlantVillage\\train\\Strawberry___healthy": 364,
+        "PlantVillage\\train\\Strawberry___Leaf_scorch": 887,
+        "PlantVillage\\train\\Tomato___Bacterial_spot": 1702,
+        "PlantVillage\\train\\Tomato___Early_blight": 800,
+        "PlantVillage\\train\\Tomato___healthy": 1273,
+        "PlantVillage\\train\\Tomato___Late_blight": 1527,
+        "PlantVillage\\train\\Tomato___Leaf_Mold": 761,
+        "PlantVillage\\train\\Tomato___Septoria_leaf_spot": 1417,
+        "PlantVillage\\train\\Tomato___Spider_mites Two-spotted_spider_mite": 1341,
+        "PlantVillage\\train\\Tomato___Target_Spot": 1123,
+        "PlantVillage\\train\\Tomato___Tomato_mosaic_virus": 299,
+        "PlantVillage\\train\\Tomato___Tomato_Yellow_Leaf_Curl_Virus": 4286,
+        "PlantVillage\\val\\Apple___Apple_scab": 126,
+        "PlantVillage\\val\\Apple___Black_rot": 125,
+        "PlantVillage\\val\\Apple___Cedar_apple_rust": 55,
+        "PlantVillage\\val\\Apple___healthy": 329,
+        "PlantVillage\\val\\Blueberry___healthy": 300,
+        "PlantVillage\\val\\Cherry_(including_sour)___healthy": 170,
+        "PlantVillage\\val\\Cherry_(including_sour)___Powdery_mildew": 210,
+        "PlantVillage\\val\\Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": 103,
+        "PlantVillage\\val\\Corn_(maize)___Common_rust_": 239,
+        "PlantVillage\\val\\Corn_(maize)___healthy": 233,
+        "PlantVillage\\val\\Corn_(maize)___Northern_Leaf_Blight": 197,
+        "PlantVillage\\val\\Grape___Black_rot": 236,
+        "PlantVillage\\val\\Grape___Esca_(Black_Measles)": 276,
+        "PlantVillage\\val\\Grape___healthy": 84,
+        "PlantVillage\\val\\Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": 215,
+        "PlantVillage\\val\\Orange___Haunglongbing_(Citrus_greening)": 1102,
+        "PlantVillage\\val\\Peach___Bacterial_spot": 459,
+        "PlantVillage\\val\\Peach___healthy": 72,
+        "PlantVillage\\val\\Pepper,_bell___Bacterial_spot": 200,
+        "PlantVillage\\val\\Pepper,_bell___healthy": 295,
+        "PlantVillage\\val\\Potato___Early_blight": 200,
+        "PlantVillage\\val\\Potato___healthy": 31,
+        "PlantVillage\\val\\Potato___Late_blight": 200,
+        "PlantVillage\\val\\Raspberry___healthy": 74,
+        "PlantVillage\\val\\Soybean___healthy": 1018,
+        "PlantVillage\\val\\Squash___Powdery_mildew": 367,
+        "PlantVillage\\val\\Strawberry___healthy": 92,
+        "PlantVillage\\val\\Strawberry___Leaf_scorch": 222,
+        "PlantVillage\\val\\Tomato___Bacterial_spot": 425,
+        "PlantVillage\\val\\Tomato___Early_blight": 200,
+        "PlantVillage\\val\\Tomato___healthy": 318,
+        "PlantVillage\\val\\Tomato___Late_blight": 382,
+        "PlantVillage\\val\\Tomato___Leaf_Mold": 191,
+        "PlantVillage\\val\\Tomato___Septoria_leaf_spot": 354,
+        "PlantVillage\\val\\Tomato___Spider_mites Two-spotted_spider_mite": 335,
+        "PlantVillage\\val\\Tomato___Target_Spot": 281,
+        "PlantVillage\\val\\Tomato___Tomato_mosaic_virus": 74,
+        "PlantVillage\\val\\Tomato___Tomato_Yellow_Leaf_Curl_Virus": 1071
+      },
+      "class_imbalance": {
+        "majority_class": "PlantVillage\\train\\Orange___Haunglongbing_(Citrus_greening)",
+        "majority_count": 4405,
+        "minority_class": "PlantVillage\\val\\Potato___healthy",
+        "minority_count": 31,
+        "imbalance_ratio": 142.09677419354838,
+        "coefficient_of_variation": 1.1868911744539863
+      },
+      "empty_folders": [],
+      "non_image_files": [],
+      "corrupted_images": [],
+      "resolution_stats": {
+        "count": 54305,
+        "width_min": 256,
+        "width_max": 256,
+        "width_mean": 256.0,
+        "width_median": 256.0,
+        "height_min": 256,
+        "height_max": 256,
+        "height_mean": 256.0,
+        "height_median": 256.0,
+        "megapixels_min": 0.065536,
+        "megapixels_max": 0.065536,
+        "megapixels_mean": 0.06553600000000001,
+        "megapixels_median": 0.065536
+      },
+      "format_stats": {
+        "jpeg": 54304,
+        "png": 1
+      },
+      "duplicate_hash_groups": [
+        [
+          "PlantVillage\\train\\Apple___healthy\\11beda66-01e9-4bfd-be37-c0f8646d1478___RS_HL 6271.JPG",
+          "PlantVillage\\val\\Apple___healthy\\13298d36-4425-437d-ae8e-c7d70e200084___RS_HL 6271.JPG"
+        ],
+        [
+          "PlantVillage\\train\\Apple___healthy\\14896dc0-688d-456f-b5ec-a037695b0193___RS_HL 6268.JPG",
+          "PlantVillage\\train\\Apple___healthy\\c21cf428-bfc3-4710-b5d2-69d1c0e94748___RS_HL 6268.JPG"
+        ],
+        [
+          "PlantVillage\\train\\Apple___healthy\\1ab5e019-e5f0-4d8e-a252-94cb0aab8b0a___RS_HL 6269.JPG",
+          "PlantVillage\\train\\Apple___healthy\\3673d121-b5de-481c-b057-d4ee5b4959b1___RS_HL 6269.JPG"
+        ],
+        [
+          "PlantVillage\\train\\Apple___healthy\\9b75de13-d4b0-4b3f-988c-3e9926eef957___RS_HL 6273.JPG",
+          "PlantVillage\\val\\Apple___healthy\\5192db55-4aa7-421c-92d4-c2dac79e7379___RS_HL 6273.JPG"
+        ],
+        [
+          "PlantVillage\\train\\Apple___healthy\\acb21cc2-8d65-4880-a7bb-dcc1eab1564b___RS_HL 6272.JPG",
+          "PlantVillage\\val\\Apple___healthy\\3d075f90-7002-4c45-abc0-4f35ee49aa79___RS_HL 6272.JPG"
+        ],
+        [
+          "PlantVillage\\train\\Apple___healthy\\ced4e27a-5eff-4190-a33a-cdc3d84c811e___RS_HL 6270.JPG",
+          "PlantVillage\\val\\Apple___healthy\\dc18b924-f172-445d-8fed-61445d437aaa___RS_HL 6270.JPG"
+        ],
+        [
+          "PlantVillage\\train\\Apple___healthy\\f2cda910-55c7-46d7-b1a2-9a3bb9792148___RS_HL 6274.JPG",
+          "PlantVillage\\val\\Apple___healthy\\fdbfa6f7-f887-442d-8df1-1f0cf839fc4d___RS_HL 6274.JPG"
+        ],
+        [
+          "PlantVillage\\train\\Corn_(maize)___healthy\\94ca39a0-d4df-44c6-b5cc-a38a754506e5___R.S_HL 0601 copy 3.jpg",
+          "PlantVillage\\val\\Corn_(maize)___healthy\\8afc9635-c5e3-41be-aac0-74109d6112ed___R.S_HL 0601 copy 2.jpg"
+        ],
+        [
+          "PlantVillage\\train\\Tomato___healthy\\1af0bfe1-4bcf-4b8b-be66-5d0953eb647e___GH_HL Leaf 482.2.JPG",
+          "PlantVillage\\train\\Tomato___healthy\\cfd491d6-4af5-4728-8f0e-0d330a07174a___GH_HL Leaf 482.2.JPG"
+        ],
+        [
+          "PlantVillage\\train\\Tomato___healthy\\34c81c57-e1fa-49dd-a49d-34fe8b2385fe___GH_HL Leaf 466.1.JPG",
+          "PlantVillage\\val\\Tomato___healthy\\068e324c-faf6-40d6-8f83-578907f1cac5___GH_HL Leaf 466.1.JPG"
+        ],
+        [
+          "PlantVillage\\train\\Tomato___healthy\\37203047-d8ba-43f7-b31e-d496c41c569c___GH_HL Leaf 389.JPG",
+          "PlantVillage\\train\\Tomato___healthy\\505465db-407b-4e0a-8110-7479dad5261c___GH_HL Leaf 389.JPG"
+        ],
+        [
+          "PlantVillage\\train\\Tomato___healthy\\37aad83b-7ff8-4b35-b3ed-fb8e0f54910b___GH_HL Leaf 342.1.JPG",
+          "PlantVillage\\train\\Tomato___healthy\\e786ac89-29fe-47e3-b49e-b9a9ee7edd9d___GH_HL Leaf 342.1.JPG"
+        ],
+        [
+          "PlantVillage\\train\\Tomato___healthy\\9662364c-aaba-45e3-b907-10792d60578c___GH_HL Leaf 220.JPG",
+          "PlantVillage\\train\\Tomato___healthy\\d2ce7896-6fa4-45e6-96c5-d162da0e3e1c___GH_HL Leaf 220.JPG"
+        ],
+        [
+          "PlantVillage\\train\\Tomato___healthy\\a5de43e7-fc2f-4a14-a8e6-c0f2f94c84f1___GH_HL Leaf 434.JPG",
+          "PlantVillage\\val\\Tomato___healthy\\488feb1c-4b9f-44e7-8aa6-4103a9601f5f___GH_HL Leaf 434.JPG"
+        ],
+        [
+          "PlantVillage\\train\\Tomato___Late_blight\\1a69b38b-c4eb-42c4-9584-bcb14fb8db0c___GHLB2 Leaf 9011.JPG",
+          "PlantVillage\\train\\Tomato___Late_blight\\2c47b891-3c97-48f1-a2cc-5aa53d3a1148___GHLB2 Leaf 9011.JPG"
+        ],
+        [
+          "PlantVillage\\train\\Tomato___Late_blight\\3fae9c64-18f0-4a67-9f97-554248bb1bed___GHLB_PS Leaf 24 Day 16.jpg",
+          "PlantVillage\\train\\Tomato___Late_blight\\5de6da85-f8c4-48c4-b463-3e6bd78884cc___GHLB_PS Leaf 24 Day 16.jpg"
+        ],
+        [
+          "PlantVillage\\train\\Tomato___Late_blight\\48c55974-9fe9-4f4b-94f7-c8cd127d1e05___GHLB_PS Leaf 23.7 Day 13.jpg",
+          "PlantVillage\\train\\Tomato___Late_blight\\bd4f09bd-ee85-4ab1-bce0-8cde3fdd7f1b___GHLB_PS Leaf 23.7 Day 13.jpg"
+        ],
+        [
+          "PlantVillage\\train\\Tomato___Late_blight\\5f21282c-e2ef-4c4a-ace1-b5701fe7effc___GHLB2 Leaf 8999.JPG",
+          "PlantVillage\\train\\Tomato___Late_blight\\e5d707cd-077c-43af-bda9-6138e516ff51___GHLB2 Leaf 8999.JPG"
+        ],
+        [
+          "PlantVillage\\train\\Tomato___Late_blight\\861d8b00-57a4-46b0-b51a-09d102dbe119___GHLB_PS Leaf 24 Day 13.jpg",
+          "PlantVillage\\train\\Tomato___Late_blight\\d82b634e-9a19-497b-b698-aaf100d622a1___GHLB_PS Leaf 24 Day 13.jpg"
+        ],
+        [
+          "PlantVillage\\train\\Tomato___Late_blight\\98586693-fe1f-4ea0-8e27-4501b61cf09b___GHLB_PS Leaf 23.5 Day 13.jpg",
+          "PlantVillage\\val\\Tomato___Late_blight\\c1775bad-7c02-41fb-bb7d-f8df91d60ac3___GHLB_PS Leaf 23.5 Day 13.jpg"
+        ],
+        [
+          "PlantVillage\\train\\Tomato___Late_blight\\d6e6897a-5083-4914-9903-804c5684a956___GHLB2 Leaf 102.JPG",
+          "PlantVillage\\val\\Tomato___Late_blight\\d81682aa-746b-4e07-af2b-52ebb6f4c017___GHLB2 Leaf 102.JPG"
+        ],
+        [
+          "PlantVillage\\train\\Tomato___Late_blight\\e20107e7-137f-400e-817f-5dc4c58e5d70___GHLB2 Leaf 8677.JPG",
+          "PlantVillage\\val\\Tomato___Late_blight\\5688ea99-c949-41d0-bbab-9cbf0ffb8bcd___GHLB2 Leaf 8677.JPG"
+        ]
+      ],
+      "duplicate_filenames": {},
+      "max_directory_depth": 3
+    }
+  }
+}
