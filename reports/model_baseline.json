@@ -1,0 +1,229 @@
+{
+  "model_name": "BaselineCNN",
+  "input_shape": [
+    1,
+    3,
+    224,
+    224
+  ],
+  "output_shape": [
+    1,
+    43
+  ],
+  "num_classes": 43,
+  "total_parameters": 399947,
+  "trainable_parameters": 399947,
+  "non_trainable_parameters": 0,
+  "layers": [
+    {
+      "name": "features",
+      "layer_type": "Sequential",
+      "output_shape": "[1, 256, 14, 14]",
+      "parameters": 388896,
+      "trainable_parameters": 388896
+    },
+    {
+      "name": "features.0",
+      "layer_type": "ConvBlock",
+      "output_shape": "[1, 32, 112, 112]",
+      "parameters": 928,
+      "trainable_parameters": 928
+    },
+    {
+      "name": "features.0.block",
+      "layer_type": "Sequential",
+      "output_shape": "[1, 32, 112, 112]",
+      "parameters": 928,
+      "trainable_parameters": 928
+    },
+    {
+      "name": "features.0.block.0",
+      "layer_type": "Conv2d",
+      "output_shape": "[1, 32, 224, 224]",
+      "parameters": 864,
+      "trainable_parameters": 864
+    },
+    {
+      "name": "features.0.block.1",
+      "layer_type": "BatchNorm2d",
+      "output_shape": "[1, 32, 224, 224]",
+      "parameters": 64,
+      "trainable_parameters": 64
+    },
+    {
+      "name": "features.0.block.2",
+      "layer_type": "ReLU",
+      "output_shape": "[1, 32, 224, 224]",
+      "parameters": 0,
+      "trainable_parameters": 0
+    },
+    {
+      "name": "features.0.block.3",
+      "layer_type": "MaxPool2d",
+      "output_shape": "[1, 32, 112, 112]",
+      "parameters": 0,
+      "trainable_parameters": 0
+    },
+    {
+      "name": "features.1",
+      "layer_type": "ConvBlock",
+      "output_shape": "[1, 64, 56, 56]",
+      "parameters": 18560,
+      "trainable_parameters": 18560
+    },
+    {
+      "name": "features.1.block",
+      "layer_type": "Sequential",
+      "output_shape": "[1, 64, 56, 56]",
+      "parameters": 18560,
+      "trainable_parameters": 18560
+    },
+    {
+      "name": "features.1.block.0",
+      "layer_type": "Conv2d",
+      "output_shape": "[1, 64, 112, 112]",
+      "parameters": 18432,
+      "trainable_parameters": 18432
+    },
+    {
+      "name": "features.1.block.1",
+      "layer_type": "BatchNorm2d",
+      "output_shape": "[1, 64, 112, 112]",
+      "parameters": 128,
+      "trainable_parameters": 128
+    },
+    {
+      "name": "features.1.block.2",
+      "layer_type": "ReLU",
+      "output_shape": "[1, 64, 112, 112]",
+      "parameters": 0,
+      "trainable_parameters": 0
+    },
+    {
+      "name": "features.1.block.3",
+      "layer_type": "MaxPool2d",
+      "output_shape": "[1, 64, 56, 56]",
+      "parameters": 0,
+      "trainable_parameters": 0
+    },
+    {
+      "name": "features.2",
+      "layer_type": "ConvBlock",
+      "output_shape": "[1, 128, 28, 28]",
+      "parameters": 73984,
+      "trainable_parameters": 73984
+    },
+    {
+      "name": "features.2.block",
+      "layer_type": "Sequential",
+      "output_shape": "[1, 128, 28, 28]",
+      "parameters": 73984,
+      "trainable_parameters": 73984
+    },
+    {
+      "name": "features.2.block.0",
+      "layer_type": "Conv2d",
+      "output_shape": "[1, 128, 56, 56]",
+      "parameters": 73728,
+      "trainable_parameters": 73728
+    },
+    {
+      "name": "features.2.block.1",
+      "layer_type": "BatchNorm2d",
+      "output_shape": "[1, 128, 56, 56]",
+      "parameters": 256,
+      "trainable_parameters": 256
+    },
+    {
+      "name": "features.2.block.2",
+      "layer_type": "ReLU",
+      "output_shape": "[1, 128, 56, 56]",
+      "parameters": 0,
+      "trainable_parameters": 0
+    },
+    {
+      "name": "features.2.block.3",
+      "layer_type": "MaxPool2d",
+      "output_shape": "[1, 128, 28, 28]",
+      "parameters": 0,
+      "trainable_parameters": 0
+    },
+    {
+      "name": "features.3",
+      "layer_type": "ConvBlock",
+      "output_shape": "[1, 256, 14, 14]",
+      "parameters": 295424,
+      "trainable_parameters": 295424
+    },
+    {
+      "name": "features.3.block",
+      "layer_type": "Sequential",
+      "output_shape": "[1, 256, 14, 14]",
+      "parameters": 295424,
+      "trainable_parameters": 295424
+    },
+    {
+      "name": "features.3.block.0",
+      "layer_type": "Conv2d",
+      "output_shape": "[1, 256, 28, 28]",
+      "parameters": 294912,
+      "trainable_parameters": 294912
+    },
+    {
+      "name": "features.3.block.1",
+      "layer_type": "BatchNorm2d",
+      "output_shape": "[1, 256, 28, 28]",
+      "parameters": 512,
+      "trainable_parameters": 512
+    },
+    {
+      "name": "features.3.block.2",
+      "layer_type": "ReLU",
+      "output_shape": "[1, 256, 28, 28]",
+      "parameters": 0,
+      "trainable_parameters": 0
+    },
+    {
+      "name": "features.3.block.3",
+      "layer_type": "MaxPool2d",
+      "output_shape": "[1, 256, 14, 14]",
+      "parameters": 0,
+      "trainable_parameters": 0
+    },
+    {
+      "name": "global_pool",
+      "layer_type": "AdaptiveAvgPool2d",
+      "output_shape": "[1, 256, 1, 1]",
+      "parameters": 0,
+      "trainable_parameters": 0
+    },
+    {
+      "name": "dropout",
+      "layer_type": "Dropout",
+      "output_shape": "[1, 256]",
+      "parameters": 0,
+      "trainable_parameters": 0
+    },
+    {
+      "name": "classifier",
+      "layer_type": "Linear",
+      "output_shape": "[1, 43]",
+      "parameters": 11051,
+      "trainable_parameters": 11051
+    }
+  ],
+  "trainer_compatible": true,
+  "trainer_verification_message": "Compatible with Trainer: input=[4, 3, 224, 224], output=[4, 43], loss=3.1896",
+  "generated_at": "2026-07-13T08:48:30.543594+00:00",
+  "architecture": [
+    "Input (3\u00d7224\u00d7224)",
+    "Conv Block 1: Conv2D \u2192 BatchNorm \u2192 ReLU \u2192 MaxPool",
+    "Conv Block 2: Conv2D \u2192 BatchNorm \u2192 ReLU \u2192 MaxPool",
+    "Conv Block 3: Conv2D \u2192 BatchNorm \u2192 ReLU \u2192 MaxPool",
+    "Conv Block 4: Conv2D \u2192 BatchNorm \u2192 ReLU \u2192 MaxPool",
+    "Global Average Pooling",
+    "Dropout",
+    "Fully Connected",
+    "43-class logits (softmax at inference)"
+  ]
+}

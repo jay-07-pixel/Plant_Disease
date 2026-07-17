@@ -1,0 +1,390 @@
+{
+  "generated_at": "2026-07-13T07:30:57.639751+00:00",
+  "label_mapping_source": "reports\\label_mapping.json",
+  "external_dir": "C:\\Projects\\PlantDiseaseAI\\datasets\\external",
+  "metadata_csv_path": "datasets\\processed\\dataset_metadata.csv",
+  "metadata_json_path": "datasets\\processed\\dataset_metadata.json",
+  "statistics": {
+    "total_images": 56857,
+    "total_canonical_classes": 43,
+    "healthy_count": 15929,
+    "diseased_count": 40928,
+    "unmapped_images": 0,
+    "unreadable_images": 0,
+    "images_per_class": {
+      "orange|huanglongbing_(citrus_greening)": 5507,
+      "tomato|tomato_yellow_leaf_curl_virus": 5432,
+      "soybean|healthy": 5155,
+      "peach|bacterial_spot": 2297,
+      "tomato|bacterial_spot": 2234,
+      "tomato|late_blight": 2020,
+      "squash|powdery_mildew": 1964,
+      "tomato|septoria_leaf_spot": 1919,
+      "apple|healthy": 1736,
+      "tomato|spider_mites_two_spotted_spider_mite": 1676,
+      "tomato|healthy": 1653,
+      "blueberry|healthy": 1618,
+      "pepper|healthy": 1539,
+      "tomato|target_spot": 1404,
+      "grape|esca_(black_measles)": 1383,
+      "grape|black_rot": 1244,
+      "corn|common_rust": 1192,
+      "corn|healthy": 1162,
+      "potato|early_blight": 1117,
+      "strawberry|leaf_scorch": 1109,
+      "potato|late_blight": 1105,
+      "tomato|early_blight": 1083,
+      "grape|leaf_blight_(isariopsis_leaf_spot)": 1076,
+      "cherry|powdery_mildew": 1052,
+      "tomato|leaf_mold": 1043,
+      "pepper|bacterial_spot": 997,
+      "corn|northern_leaf_blight": 985,
+      "cherry|healthy": 911,
+      "apple|apple_scab": 717,
+      "apple|black_rot": 621,
+      "strawberry|healthy": 552,
+      "corn|cercospora_leaf_spot_gray_leaf_spot": 513,
+      "grape|healthy": 492,
+      "raspberry|healthy": 487,
+      "peach|healthy": 472,
+      "tomato|tomato_mosaic_virus": 427,
+      "apple|cedar_apple_rust": 275,
+      "corn|blight": 192,
+      "potato|healthy": 152,
+      "corn|rust": 116,
+      "apple|rust": 89,
+      "pepper|leaf_spot": 71,
+      "corn|gray_leaf_spot": 68
+    },
+    "images_per_plant": {
+      "Tomato": 18891,
+      "Orange": 5507,
+      "Soybean": 5155,
+      "Corn": 4228,
+      "Grape": 4195,
+      "Apple": 3438,
+      "Peach": 2769,
+      "Pepper": 2607,
+      "Potato": 2374,
+      "Squash": 1964,
+      "Cherry": 1963,
+      "Strawberry": 1661,
+      "Blueberry": 1618,
+      "Raspberry": 487
+    },
+    "dataset_contribution": {
+      "plantvillage": 54305,
+      "plantdoc": 2552
+    },
+    "split_distribution": {
+      "train": 45760,
+      "val": 10861,
+      "test": 236
+    },
+    "class_weights": {
+      "orange|huanglongbing_(citrus_greening)": 0.2401045603692552,
+      "tomato|tomato_yellow_leaf_curl_virus": 0.2434197006541768,
+      "soybean|healthy": 0.25649967292987164,
+      "peach|bacterial_spot": 0.5756446730315579,
+      "tomato|bacterial_spot": 0.5918781620203618,
+      "tomato|late_blight": 0.6545820861155883,
+      "squash|powdery_mildew": 0.6732463411168474,
+      "tomato|septoria_leaf_spot": 0.689033774858514,
+      "apple|healthy": 0.7616680955953274,
+      "tomato|spider_mites_two_spotted_spider_mite": 0.7889354498529166,
+      "tomato|healthy": 0.7999127731116082,
+      "blueberry|healthy": 0.8172162014545664,
+      "pepper|healthy": 0.8591655711198755,
+      "tomato|target_spot": 0.9417776452660174,
+      "grape|esca_(black_measles)": 0.9560779565824211,
+      "grape|black_rot": 1.062906602856502,
+      "corn|common_rust": 1.1092750117059467,
+      "corn|healthy": 1.1379137813713325,
+      "potato|early_blight": 1.1837563240407236,
+      "strawberry|leaf_scorch": 1.192295594187095,
+      "potato|late_blight": 1.1966115963379986,
+      "tomato|early_blight": 1.2209194958019283,
+      "grape|leaf_blight_(isariopsis_leaf_spot)": 1.2288622806259186,
+      "cherry|powdery_mildew": 1.2568971615527456,
+      "tomato|leaf_mold": 1.2677428705210818,
+      "pepper|bacterial_spot": 1.3262345175060064,
+      "corn|northern_leaf_blight": 1.3423916892928816,
+      "cherry|healthy": 1.4514333852398336,
+      "apple|apple_scab": 1.844150368135967,
+      "apple|black_rot": 2.1292364153840393,
+      "strawberry|healthy": 2.395390967307044,
+      "corn|cercospora_leaf_spot_gray_leaf_spot": 2.5774967133596265,
+      "grape|healthy": 2.6875118169786347,
+      "raspberry|healthy": 2.7151043407669166,
+      "peach|healthy": 2.8013894363421366,
+      "tomato|tomato_mosaic_virus": 3.0966178312728063,
+      "apple|cedar_apple_rust": 4.808202959830867,
+      "corn|blight": 6.886749031007752,
+      "potato|healthy": 8.699051407588739,
+      "corn|rust": 11.398757016840417,
+      "apple|rust": 14.856806898353803,
+      "pepper|leaf_spot": 18.623321323288568,
+      "corn|gray_leaf_spot": 19.444938440492475
+    }
+  },
+  "class_weight_table": [
+    {
+      "canonical_label": "orange|huanglongbing_(citrus_greening)",
+      "count": 5507,
+      "frequency": 0.09685702727896302,
+      "weight": 0.2401045603692552
+    },
+    {
+      "canonical_label": "tomato|tomato_yellow_leaf_curl_virus",
+      "count": 5432,
+      "frequency": 0.0955379284872575,
+      "weight": 0.2434197006541768
+    },
+    {
+      "canonical_label": "soybean|healthy",
+      "count": 5155,
+      "frequency": 0.09066605694989184,
+      "weight": 0.25649967292987164
+    },
+    {
+      "canonical_label": "peach|bacterial_spot",
+      "count": 2297,
+      "frequency": 0.04039959899396732,
+      "weight": 0.5756446730315579
+    },
+    {
+      "canonical_label": "tomato|bacterial_spot",
+      "count": 2234,
+      "frequency": 0.0392915560089347,
+      "weight": 0.5918781620203618
+    },
+    {
+      "canonical_label": "tomato|late_blight",
+      "count": 2020,
+      "frequency": 0.03552772745660165,
+      "weight": 0.6545820861155883
+    },
+    {
+      "canonical_label": "squash|powdery_mildew",
+      "count": 1964,
+      "frequency": 0.034542800358794874,
+      "weight": 0.6732463411168474
+    },
+    {
+      "canonical_label": "tomato|septoria_leaf_spot",
+      "count": 1919,
+      "frequency": 0.03375134108377157,
+      "weight": 0.689033774858514
+    },
+    {
+      "canonical_label": "apple|healthy",
+      "count": 1736,
+      "frequency": 0.03053274003201013,
+      "weight": 0.7616680955953274
+    },
+    {
+      "canonical_label": "tomato|spider_mites_two_spotted_spider_mite",
+      "count": 1676,
+      "frequency": 0.029477460998645726,
+      "weight": 0.7889354498529166
+    },
+    {
+      "canonical_label": "tomato|healthy",
+      "count": 1653,
+      "frequency": 0.02907293736918937,
+      "weight": 0.7999127731116082
+    },
+    {
+      "canonical_label": "blueberry|healthy",
+      "count": 1618,
+      "frequency": 0.02845735793306013,
+      "weight": 0.8172162014545664
+    },
+    {
+      "canonical_label": "pepper|healthy",
+      "count": 1539,
+      "frequency": 0.027067907205797,
+      "weight": 0.8591655711198755
+    },
+    {
+      "canonical_label": "tomato|target_spot",
+      "count": 1404,
+      "frequency": 0.024693529380727088,
+      "weight": 0.9417776452660174
+    },
+    {
+      "canonical_label": "grape|esca_(black_measles)",
+      "count": 1383,
+      "frequency": 0.024324181719049546,
+      "weight": 0.9560779565824211
+    },
+    {
+      "canonical_label": "grape|black_rot",
+      "count": 1244,
+      "frequency": 0.021879451958422006,
+      "weight": 1.062906602856502
+    },
+    {
+      "canonical_label": "corn|common_rust",
+      "count": 1192,
+      "frequency": 0.020964876796172854,
+      "weight": 1.1092750117059467
+    },
+    {
+      "canonical_label": "corn|healthy",
+      "count": 1162,
+      "frequency": 0.020437237279490653,
+      "weight": 1.1379137813713325
+    },
+    {
+      "canonical_label": "potato|early_blight",
+      "count": 1117,
+      "frequency": 0.01964577800446735,
+      "weight": 1.1837563240407236
+    },
+    {
+      "canonical_label": "strawberry|leaf_scorch",
+      "count": 1109,
+      "frequency": 0.019505074133352094,
+      "weight": 1.192295594187095
+    },
+    {
+      "canonical_label": "potato|late_blight",
+      "count": 1105,
+      "frequency": 0.019434722197794466,
+      "weight": 1.1966115963379986
+    },
+    {
+      "canonical_label": "tomato|early_blight",
+      "count": 1083,
+      "frequency": 0.019047786552227518,
+      "weight": 1.2209194958019283
+    },
+    {
+      "canonical_label": "grape|leaf_blight_(isariopsis_leaf_spot)",
+      "count": 1076,
+      "frequency": 0.01892467066500167,
+      "weight": 1.2288622806259186
+    },
+    {
+      "canonical_label": "cherry|powdery_mildew",
+      "count": 1052,
+      "frequency": 0.018502559051655907,
+      "weight": 1.2568971615527456
+    },
+    {
+      "canonical_label": "tomato|leaf_mold",
+      "count": 1043,
+      "frequency": 0.01834426719665125,
+      "weight": 1.2677428705210818
+    },
+    {
+      "canonical_label": "pepper|bacterial_spot",
+      "count": 997,
+      "frequency": 0.017535219937738537,
+      "weight": 1.3262345175060064
+    },
+    {
+      "canonical_label": "corn|northern_leaf_blight",
+      "count": 985,
+      "frequency": 0.017324164131065654,
+      "weight": 1.3423916892928816
+    },
+    {
+      "canonical_label": "cherry|healthy",
+      "count": 911,
+      "frequency": 0.016022653323249557,
+      "weight": 1.4514333852398336
+    },
+    {
+      "canonical_label": "apple|apple_scab",
+      "count": 717,
+      "frequency": 0.012610584448704646,
+      "weight": 1.844150368135967
+    },
+    {
+      "canonical_label": "apple|black_rot",
+      "count": 621,
+      "frequency": 0.010922137995321596,
+      "weight": 2.1292364153840393
+    },
+    {
+      "canonical_label": "strawberry|healthy",
+      "count": 552,
+      "frequency": 0.00970856710695253,
+      "weight": 2.395390967307044
+    },
+    {
+      "canonical_label": "corn|cercospora_leaf_spot_gray_leaf_spot",
+      "count": 513,
+      "frequency": 0.009022635735265667,
+      "weight": 2.5774967133596265
+    },
+    {
+      "canonical_label": "grape|healthy",
+      "count": 492,
+      "frequency": 0.008653288073588124,
+      "weight": 2.6875118169786347
+    },
+    {
+      "canonical_label": "raspberry|healthy",
+      "count": 487,
+      "frequency": 0.008565348154141091,
+      "weight": 2.7151043407669166
+    },
+    {
+      "canonical_label": "peach|healthy",
+      "count": 472,
+      "frequency": 0.008301528395799989,
+      "weight": 2.8013894363421366
+    },
+    {
+      "canonical_label": "tomato|tomato_mosaic_virus",
+      "count": 427,
+      "frequency": 0.007510069120776685,
+      "weight": 3.0966178312728063
+    },
+    {
+      "canonical_label": "apple|cedar_apple_rust",
+      "count": 275,
+      "frequency": 0.004836695569586858,
+      "weight": 4.808202959830867
+    },
+    {
+      "canonical_label": "corn|blight",
+      "count": 192,
+      "frequency": 0.0033768929067660974,
+      "weight": 6.886749031007752
+    },
+    {
+      "canonical_label": "potato|healthy",
+      "count": 152,
+      "frequency": 0.002673373551189827,
+      "weight": 8.699051407588739
+    },
+    {
+      "canonical_label": "corn|rust",
+      "count": 116,
+      "frequency": 0.002040206131171184,
+      "weight": 11.398757016840417
+    },
+    {
+      "canonical_label": "apple|rust",
+      "count": 89,
+      "frequency": 0.0015653305661572014,
+      "weight": 14.856806898353803
+    },
+    {
+      "canonical_label": "pepper|leaf_spot",
+      "count": 71,
+      "frequency": 0.0012487468561478798,
+      "weight": 18.623321323288568
+    },
+    {
+      "canonical_label": "corn|gray_leaf_spot",
+      "count": 68,
+      "frequency": 0.0011959829044796595,
+      "weight": 19.444938440492475
+    }
+  ]
+}

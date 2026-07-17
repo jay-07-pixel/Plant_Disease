@@ -1,0 +1,97 @@
+{
+  "generated_at": "2026-07-13T07:50:31.510174+00:00",
+  "config": {
+    "target_size": {
+      "width": 224,
+      "height": 224
+    },
+    "normalization": {
+      "mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "enabled": true
+    },
+    "split": {
+      "train_ratio": 0.7,
+      "val_ratio": 0.15,
+      "test_ratio": 0.15,
+      "random_seed": 42
+    },
+    "output": {
+      "images_dir": "datasets\\processed\\images",
+      "metadata_csv": "datasets\\processed\\processed_metadata.csv",
+      "image_format": "jpg",
+      "jpeg_quality": 95
+    },
+    "source_metadata_path": "datasets\\processed\\dataset_metadata.csv",
+    "padding_color": [
+      0,
+      0,
+      0
+    ],
+    "skip_existing": true
+  },
+  "images_processed": 56857,
+  "images_skipped": 0,
+  "images_failed": 0,
+  "resize_statistics": {
+    "mean_scale_factor": 0.8499755545411101,
+    "min_scale_factor": 0.037333333333333336,
+    "max_scale_factor": 1.9478260869565218,
+    "padded_image_count": 2449,
+    "mean_original_width": 291.6305819863869,
+    "mean_original_height": 284.7595898482157
+  },
+  "split_statistics": {
+    "total_images": 56857,
+    "train_count": 39797,
+    "val_count": 8530,
+    "test_count": 8530,
+    "train_ratio": 0.6999489948467207,
+    "val_ratio": 0.15002550257663963,
+    "test_ratio": 0.15002550257663963,
+    "classes_with_small_splits": 0
+  },
+  "augmentation_config": {
+    "enabled": true,
+    "target_split": "train",
+    "random_flip": {
+      "enabled": true,
+      "horizontal_probability": 0.5,
+      "vertical_probability": 0.0
+    },
+    "random_rotation": {
+      "enabled": true,
+      "max_degrees": 20.0,
+      "probability": 0.5
+    },
+    "random_crop": {
+      "enabled": true,
+      "crop_scale_min": 0.8,
+      "crop_scale_max": 1.0,
+      "probability": 0.5
+    },
+    "color_jitter": {
+      "enabled": true,
+      "brightness": 0.2,
+      "contrast": 0.2,
+      "saturation": 0.2,
+      "hue": 0.05,
+      "probability": 0.5
+    },
+    "gaussian_noise": {
+      "enabled": true,
+      "mean": 0.0,
+      "std": 0.02,
+      "probability": 0.3
+    }
+  },
+  "skip_reasons": {}
+}

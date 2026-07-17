@@ -1,0 +1,1 @@
+"""Baseline CNN training experiment."""

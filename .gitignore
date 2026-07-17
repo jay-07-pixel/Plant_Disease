@@ -43,11 +43,10 @@ datasets/interim/*
 datasets/processed/*
 !datasets/**/.gitkeep
 
-# Models & experiments
+# Models & experiment run artifacts
 saved_models/*
 !saved_models/.gitkeep
-experiments/*
-!experiments/.gitkeep
+experiments/**/tensorboard/
 
 # Reports (track pipeline outputs; datasets remain excluded)
 # reports/ is versioned intentionally

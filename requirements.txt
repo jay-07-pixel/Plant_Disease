@@ -2,15 +2,18 @@
 # Install with: pip install -r requirements.txt
 
 # Deep Learning
-# torch
-# torchvision
+torch
+torchvision
+torchmetrics
+tensorboard
+tqdm
 
 # API
 # fastapi
 # uvicorn
 
 # Data & Config
-# numpy
+numpy
 pandas
 # pyyaml
 pillow

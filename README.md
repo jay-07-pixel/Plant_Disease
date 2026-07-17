@@ -15,13 +15,15 @@ PlantDiseaseAI is a full-stack machine learning project designed to detect plant
 | Multi-dataset comparison | Done |
 | Label standardization | Done |
 | Data quality control | Done |
-| Image preprocessing | Planned |
-| PyTorch training | Planned |
+| Image preprocessing | Done |
+| Dataset balancing strategy | Done |
+| PyTorch training engine | Done |
+| Transfer-learning experiments | Done |
 | Grad-CAM explainability | Planned |
 | FastAPI backend | Planned |
 | Flutter frontend | Planned |
 | AI chatbot | Planned |
-| Experiment tracking | Planned |
+| Experiment tracking (TensorBoard) | Done |
 
 ## Datasets
 
@@ -216,9 +218,9 @@ PlantDiseaseAI/
 │   │   ├── dataset_comparison.py  # Cross-dataset comparison
 │   │   ├── label_standardizer.py  # Universal label mapping
 │   │   └── data_quality.py        # Quality control (read-only)
-│   ├── features/         # Feature engineering (planned)
-│   ├── models/           # Model architectures (planned)
-│   ├── training/         # Training pipelines (planned)
+│   ├── preprocessing/    # Image transforms, splits, balancing
+│   ├── models/           # Baseline CNN + transfer-learning classifiers
+│   ├── training/         # Trainer, DataLoader, metrics, checkpoints
 │   ├── evaluation/       # Metrics (planned)
 │   ├── explainability/   # Grad-CAM (planned)
 │   ├── api/              # FastAPI backend (planned)
@@ -226,7 +228,7 @@ PlantDiseaseAI/
 │   └── utils/            # Shared utilities
 ├── reports/              # Generated audit, mapping, and quality reports
 │   └── comparison/       # Cross-dataset comparison artifacts
-├── experiments/          # Experiment tracking (planned)
+├── experiments/          # Per-model training experiment runners
 ├── logs/
 ├── notebooks/
 ├── saved_models/
@@ -298,7 +300,26 @@ paths:
 | `imagehash` | Perceptual duplicate detection |
 | `opencv-python` | Laplacian blur detection |
 
-Training, API, and experiment-tracking packages are listed in `requirements.txt` but not yet installed.
+| `torch` / `torchvision` | Model training and transfer learning |
+| `torchmetrics` | Epoch accuracy, precision, recall, F1 |
+| `tensorboard` | Training run logging |
+| `tqdm` | Progress bars during training |
+| `numpy` | Metrics and array operations |
+
+## Training Experiments
+
+Two-stage transfer learning (10 epochs frozen backbone + 20 epochs fine-tuning) is implemented for:
+
+| Model | Command |
+|-------|---------|
+| Baseline CNN | `python -m experiments.baseline_cnn.train --train` |
+| ResNet50 | `python -m experiments.resnet50.train --train` |
+| ResNet101 | `python -m experiments.resnet101.train --train` |
+| DenseNet121 | `python -m experiments.densenet121.train --train` |
+| EfficientNet-B0 | `python -m experiments.efficientnet_b0.train --train` |
+| EfficientNet-B3 | `python -m experiments.efficientnet_b3.train --train` |
+
+Training reports are saved under `reports/`. Checkpoints go to `saved_models/` (gitignored).
 
 ## Design Principles
 
@@ -310,10 +331,7 @@ Training, API, and experiment-tracking packages are listed in `requirements.txt`
 
 ## Next Steps
 
-- [ ] Dataset preprocessing (resize, normalize, augment)
-- [ ] Canonical metadata export to `datasets/processed/`
-- [ ] Train/val/test splitting with stratification
-- [ ] PyTorch `DataLoader` and baseline classifier
+- [ ] Final model comparison and test-set evaluation
 - [ ] Grad-CAM explainability
 - [ ] FastAPI inference API
 - [ ] Flutter mobile app

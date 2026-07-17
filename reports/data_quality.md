@@ -1,6 +1,6 @@
 # Data Quality Report
 
-**Generated:** 2026-07-11T04:05:29.752141+00:00  
+**Generated:** 2026-07-13T07:22:12.022260+00:00  
 **Source directory:** `C:\Projects\PlantDiseaseAI\datasets\external`  
 
 > Read-only quality inspection. No images were deleted, renamed, or modified.
