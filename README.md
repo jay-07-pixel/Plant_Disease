@@ -2,7 +2,41 @@
 
 Production-quality AI system for plant disease detection, explanation, and assistance.
 
-PlantDiseaseAI is a full-stack machine learning project designed to detect plant diseases from leaf images, explain model predictions, and assist users through an AI chatbot. The data engineering pipeline is built first — every stage is **read-only** until preprocessing is explicitly implemented.
+PlantDiseaseAI is a full-stack machine learning project designed to detect plant diseases from leaf images, explain model predictions, and assist users through an AI chatbot. The data engineering and training pipelines are implemented end-to-end; deployment and explainability are next.
+
+## Project Progress
+
+### Completed
+
+| Area | Details |
+|------|---------|
+| **Data ingestion** | ZIP extraction, verification, dataset registry |
+| **Dataset audit & EDA** | Class distribution, resolution, format analysis |
+| **Multi-dataset comparison** | PlantVillage vs PlantDoc overlap and stats |
+| **Label standardization** | 65 raw labels → 43 canonical classes |
+| **Data quality control** | Corruption, blur, duplicate, and format checks |
+| **Dataset preparation** | Canonical metadata export to `datasets/processed/` |
+| **Preprocessing** | Resize, normalize, train/val/test split (~56,857 images) |
+| **Balancing strategy** | Class weights and training-only balancing plan |
+| **PyTorch training engine** | Trainer, AMP, checkpoints, metrics, TensorBoard |
+| **Model training (5/6)** | Baseline CNN, ResNet50, ResNet101, DenseNet121, EfficientNet-B0 |
+
+### In Progress
+
+| Area | Details |
+|------|---------|
+| **EfficientNet-B3 training** | Two-stage transfer learning run in progress |
+
+### Planned
+
+| Area | Details |
+|------|---------|
+| **Test-set evaluation** | Final metrics on held-out test split |
+| **Model comparison** | Side-by-side analysis of all trained architectures |
+| **Grad-CAM explainability** | Visual attribution for predictions |
+| **FastAPI backend** | REST inference API |
+| **Flutter frontend** | Mobile app for disease detection |
+| **AI chatbot** | User assistance and disease guidance |
 
 ## Vision
 
@@ -15,10 +49,17 @@ PlantDiseaseAI is a full-stack machine learning project designed to detect plant
 | Multi-dataset comparison | Done |
 | Label standardization | Done |
 | Data quality control | Done |
+| Dataset preparation & splits | Done |
 | Image preprocessing | Done |
 | Dataset balancing strategy | Done |
 | PyTorch training engine | Done |
-| Transfer-learning experiments | Done |
+| Baseline CNN experiment | Done |
+| ResNet50 / ResNet101 experiments | Done |
+| DenseNet121 experiment | Done |
+| EfficientNet-B0 experiment | Done |
+| EfficientNet-B3 experiment | In Progress |
+| Test-set evaluation | Planned |
+| Model comparison report | Planned |
 | Grad-CAM explainability | Planned |
 | FastAPI backend | Planned |
 | Flutter frontend | Planned |
@@ -34,7 +75,7 @@ Two public datasets are currently ingested:
 | **PlantVillage** | `datasets/external/plantvillage/` | ~54,305 | Lab images, `Plant___Disease` folder labels |
 | **PlantDoc** | `datasets/external/plantdoc/` | ~2,552 | Field/web images, natural-language folder labels |
 
-Raw ZIP archives live in `datasets/raw/`. Extracted data lives in `datasets/external/`. **No images have been modified, merged, or preprocessed.**
+Raw ZIP archives live in `datasets/raw/`. Extracted data lives in `datasets/external/`. Processed images and metadata live in `datasets/processed/` (gitignored — regenerate locally).
 
 ## Data Pipeline (Completed)
 
@@ -194,6 +235,56 @@ python -m src.data.data_quality
 
 > **Note:** A full scan of ~56,000 images takes several minutes. All checks are read-only.
 
+### 8. Dataset Preparation & Preprocessing
+
+**Modules:** `src/data/prepare_dataset.py`, `src/preprocessing/`
+
+- Builds canonical metadata and stratified train/val/test splits
+- Resizes images, applies normalization, and exports processed copies
+- Generates class weights and a training-only balancing plan
+
+**Outputs:**
+
+| File | Description |
+|------|-------------|
+| `datasets/processed/processed_metadata.csv` | Processed image records with splits |
+| `reports/dataset_preparation.json` | Preparation summary |
+| `reports/preprocessing_report.json` | Preprocessing statistics |
+| `reports/balancing_strategy.json` | Class imbalance analysis |
+| `reports/training_balancing_report.json` | Training balancing plan |
+
+```bash
+python -m src.data.prepare_dataset
+python -m src.preprocessing.preprocess
+python -m src.data.balancing_strategy
+python -m src.preprocessing.balance_training_dataset
+```
+
+## ML Training Pipeline
+
+Shared PyTorch training infrastructure under `src/training/` and per-model experiment runners under `experiments/`.
+
+**Features:**
+
+- Generic `Trainer` with AMP, gradient clipping, early stopping, and checkpointing
+- `PlantDiseaseDataset` + `DataLoader` with class-weighted loss
+- TorchMetrics: accuracy, precision, recall, F1, top-5
+- Two-stage transfer learning: 10 epochs (frozen backbone) + 20 epochs (fine-tune last block)
+- TensorBoard logging and JSON/Markdown training reports
+
+### Model Training Results (Validation)
+
+| Model | Status | Best Val Acc | Epochs |
+|-------|--------|-------------:|-------:|
+| **ResNet101** | Done | **93.53%** | 30/30 |
+| **DenseNet121** | Done | 93.40% | 30/30 |
+| **ResNet50** | Done | 92.93% | 30/30 |
+| **EfficientNet-B0** | Done | 91.27% | 27/30 |
+| **Baseline CNN** | Done | 83.95% | 30/30 |
+| **EfficientNet-B3** | In Progress | — | — |
+
+Reports: `reports/*_training_report.md`
+
 ## Project Structure
 
 ```
@@ -201,8 +292,8 @@ PlantDiseaseAI/
 ├── datasets/
 │   ├── raw/              # ZIP archives (plantvillage.zip, plantdoc.zip)
 │   ├── external/         # Extracted datasets (read-only source of truth)
-│   ├── interim/          # Future intermediate processing
-│   └── processed/        # Future canonical metadata & splits
+│   ├── interim/          # Intermediate processing
+│   └── processed/        # Processed images, metadata & splits (gitignored)
 ├── docs/
 │   └── DATASET_SCHEMA.md # Universal schema documentation
 ├── src/
@@ -217,7 +308,9 @@ PlantDiseaseAI/
 │   │   ├── eda.py                 # Visualizations & reports
 │   │   ├── dataset_comparison.py  # Cross-dataset comparison
 │   │   ├── label_standardizer.py  # Universal label mapping
-│   │   └── data_quality.py        # Quality control (read-only)
+│   │   ├── data_quality.py        # Quality control (read-only)
+│   │   ├── prepare_dataset.py     # Metadata export & splits
+│   │   └── balancing_strategy.py  # Class imbalance analysis
 │   ├── preprocessing/    # Image transforms, splits, balancing
 │   ├── models/           # Baseline CNN + transfer-learning classifiers
 │   ├── training/         # Trainer, DataLoader, metrics, checkpoints
@@ -290,16 +383,15 @@ paths:
     processed: datasets/processed
 ```
 
-## Dependencies (Active)
+## Dependencies
 
 | Package | Used for |
 |---------|----------|
-| `pandas` | Statistics, EDA, blur variance summaries |
-| `pillow` | Image metadata reads |
+| `pandas` | Statistics, EDA, metadata |
+| `pillow` | Image reads and preprocessing |
 | `matplotlib` | Audit & comparison charts |
 | `imagehash` | Perceptual duplicate detection |
 | `opencv-python` | Laplacian blur detection |
-
 | `torch` / `torchvision` | Model training and transfer learning |
 | `torchmetrics` | Epoch accuracy, precision, recall, F1 |
 | `tensorboard` | Training run logging |
@@ -317,9 +409,11 @@ Two-stage transfer learning (10 epochs frozen backbone + 20 epochs fine-tuning) 
 | ResNet101 | `python -m experiments.resnet101.train --train` |
 | DenseNet121 | `python -m experiments.densenet121.train --train` |
 | EfficientNet-B0 | `python -m experiments.efficientnet_b0.train --train` |
-| EfficientNet-B3 | `python -m experiments.efficientnet_b3.train --train` |
+| EfficientNet-B3 | `python -m experiments.efficientnet_b3.train --train` *(in progress)* |
 
 Training reports are saved under `reports/`. Checkpoints go to `saved_models/` (gitignored).
+
+Use `--resume saved_models/<model>/latest_checkpoint.pt` to continue an interrupted run.
 
 ## Design Principles
 
@@ -329,10 +423,15 @@ Training reports are saved under `reports/`. Checkpoints go to `saved_models/` (
 4. **Reports as artifacts** — JSON for machines, Markdown for humans, PNG for visualization.
 5. **Production-ready structure** — Type hints, dataclasses, enums, logging, and docstrings throughout.
 
-## Next Steps
+## Roadmap
 
-- [ ] Final model comparison and test-set evaluation
-- [ ] Grad-CAM explainability
+### In progress
+- [ ] Complete EfficientNet-B3 two-stage training
+
+### Up next
+- [ ] Test-set evaluation for all trained models
+- [ ] Unified model comparison report
+- [ ] Grad-CAM explainability module
 - [ ] FastAPI inference API
 - [ ] Flutter mobile app
 - [ ] AI chatbot integration
