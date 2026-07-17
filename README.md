@@ -19,20 +19,21 @@ PlantDiseaseAI is a full-stack machine learning project designed to detect plant
 | **Preprocessing** | Resize, normalize, train/val/test split (~56,857 images) |
 | **Balancing strategy** | Class weights and training-only balancing plan |
 | **PyTorch training engine** | Trainer, AMP, checkpoints, metrics, TensorBoard |
-| **Model training (5/6)** | Baseline CNN, ResNet50, ResNet101, DenseNet121, EfficientNet-B0 |
+| **Model training (5/10)** | Baseline CNN, ResNet50, ResNet101, DenseNet121, EfficientNet-B0 |
 
 ### In Progress
 
 | Area | Details |
 |------|---------|
-| **EfficientNet-B3 training** | Two-stage transfer learning run in progress |
+| **EfficientNet-B3 training** | Two-stage transfer learning (model 6 of 10) |
 
 ### Planned
 
 | Area | Details |
 |------|---------|
+| **Model training (4/10)** | MobileNetV3, ConvNeXt-Tiny, ViT-B/16, Swin Transformer-Tiny |
 | **Test-set evaluation** | Final metrics on held-out test split |
-| **Model comparison** | Side-by-side analysis of all trained architectures |
+| **Model comparison** | Side-by-side analysis of all 10 architectures |
 | **Grad-CAM explainability** | Visual attribution for predictions |
 | **FastAPI backend** | REST inference API |
 | **Flutter frontend** | Mobile app for disease detection |
@@ -58,6 +59,10 @@ PlantDiseaseAI is a full-stack machine learning project designed to detect plant
 | DenseNet121 experiment | Done |
 | EfficientNet-B0 experiment | Done |
 | EfficientNet-B3 experiment | In Progress |
+| MobileNetV3 experiment | Planned |
+| ConvNeXt-Tiny experiment | Planned |
+| ViT-B/16 experiment | Planned |
+| Swin Transformer-Tiny experiment | Planned |
 | Test-set evaluation | Planned |
 | Model comparison report | Planned |
 | Grad-CAM explainability | Planned |
@@ -272,6 +277,23 @@ Shared PyTorch training infrastructure under `src/training/` and per-model exper
 - Two-stage transfer learning: 10 epochs (frozen backbone) + 20 epochs (fine-tune last block)
 - TensorBoard logging and JSON/Markdown training reports
 
+### Models for Training (10 Architectures)
+
+All models are evaluated on the same 43-class plant disease dataset using the shared training pipeline. Baseline CNN is trained from scratch; models 2–10 use ImageNet transfer learning with the same two-stage schedule.
+
+| No. | Model | Category | Status | Why are we using it? |
+|-----|-------|----------|--------|----------------------|
+| **1** | **Baseline CNN** | Custom CNN | Done | Serves as the reference model. Trained from scratch to establish a baseline and demonstrate the improvement achieved through transfer learning. |
+| **2** | **ResNet50** | Residual CNN | Done | Introduces residual (skip) connections, allowing much deeper networks to be trained without vanishing gradients. One of the most widely used image classification models. |
+| **3** | **ResNet101** | Deep Residual CNN | Done | A deeper version of ResNet50 with 101 layers. Captures more complex features and helps evaluate whether increasing network depth improves plant disease classification. |
+| **4** | **DenseNet121** | Dense CNN | Done | Uses dense connections where each layer receives information from all previous layers. Promotes feature reuse, reduces redundant learning, and often achieves high accuracy with fewer parameters. |
+| **5** | **EfficientNet-B0** | Efficient CNN | Done | Uses compound scaling to balance network depth, width, and input resolution. Provides excellent accuracy while maintaining a relatively small model size. |
+| **6** | **EfficientNet-B3** | Larger Efficient CNN | In Progress | A larger and more powerful version of EfficientNet-B0. Helps determine whether increasing model capacity improves performance on plant disease datasets. |
+| **7** | **MobileNetV3** | Lightweight CNN | Planned | Designed for mobile and edge devices. Evaluates whether high accuracy can be achieved with a computationally efficient model suitable for real-time agricultural applications. |
+| **8** | **ConvNeXt-Tiny** | Modern CNN | Planned | Represents the latest generation of convolutional neural networks. Incorporates design ideas inspired by Transformers while retaining convolution operations. |
+| **9** | **Vision Transformer (ViT-B/16)** | Transformer | Planned | Treats an image as a sequence of patches instead of using convolutions. Evaluates whether Transformer-based architectures outperform CNNs for plant disease recognition. |
+| **10** | **Swin Transformer-Tiny** | Hierarchical Transformer | Planned | Improves upon ViT with shifted window attention, reducing computational cost while capturing both local and global image features. Represents state-of-the-art Transformer-based classification. |
+
 ### Model Training Results (Validation)
 
 | Model | Status | Best Val Acc | Epochs |
@@ -282,6 +304,10 @@ Shared PyTorch training infrastructure under `src/training/` and per-model exper
 | **EfficientNet-B0** | Done | 91.27% | 27/30 |
 | **Baseline CNN** | Done | 83.95% | 30/30 |
 | **EfficientNet-B3** | In Progress | — | — |
+| **MobileNetV3** | Planned | — | — |
+| **ConvNeXt-Tiny** | Planned | — | — |
+| **ViT-B/16** | Planned | — | — |
+| **Swin Transformer-Tiny** | Planned | — | — |
 
 Reports: `reports/*_training_report.md`
 
@@ -400,16 +426,20 @@ paths:
 
 ## Training Experiments
 
-Two-stage transfer learning (10 epochs frozen backbone + 20 epochs fine-tuning) is implemented for:
+Two-stage transfer learning (10 epochs frozen backbone + 20 epochs fine-tuning) is used for transfer-learning models. Baseline CNN uses a single-stage 30-epoch schedule.
 
-| Model | Command |
-|-------|---------|
-| Baseline CNN | `python -m experiments.baseline_cnn.train --train` |
-| ResNet50 | `python -m experiments.resnet50.train --train` |
-| ResNet101 | `python -m experiments.resnet101.train --train` |
-| DenseNet121 | `python -m experiments.densenet121.train --train` |
-| EfficientNet-B0 | `python -m experiments.efficientnet_b0.train --train` |
-| EfficientNet-B3 | `python -m experiments.efficientnet_b3.train --train` *(in progress)* |
+| Model | Status | Command |
+|-------|--------|---------|
+| Baseline CNN | Done | `python -m experiments.baseline_cnn.train --train` |
+| ResNet50 | Done | `python -m experiments.resnet50.train --train` |
+| ResNet101 | Done | `python -m experiments.resnet101.train --train` |
+| DenseNet121 | Done | `python -m experiments.densenet121.train --train` |
+| EfficientNet-B0 | Done | `python -m experiments.efficientnet_b0.train --train` |
+| EfficientNet-B3 | In Progress | `python -m experiments.efficientnet_b3.train --train` |
+| MobileNetV3 | Planned | `experiments/mobilenet_v3/` *(coming soon)* |
+| ConvNeXt-Tiny | Planned | `experiments/convnext_tiny/` *(coming soon)* |
+| ViT-B/16 | Planned | `experiments/vit_b16/` *(coming soon)* |
+| Swin Transformer-Tiny | Planned | `experiments/swin_tiny/` *(coming soon)* |
 
 Training reports are saved under `reports/`. Checkpoints go to `saved_models/` (gitignored).
 
@@ -426,11 +456,15 @@ Use `--resume saved_models/<model>/latest_checkpoint.pt` to continue an interrup
 ## Roadmap
 
 ### In progress
-- [ ] Complete EfficientNet-B3 two-stage training
+- [ ] Complete EfficientNet-B3 two-stage training (model 6/10)
 
 ### Up next
+- [ ] Train MobileNetV3 (model 7/10)
+- [ ] Train ConvNeXt-Tiny (model 8/10)
+- [ ] Train Vision Transformer ViT-B/16 (model 9/10)
+- [ ] Train Swin Transformer-Tiny (model 10/10)
 - [ ] Test-set evaluation for all trained models
-- [ ] Unified model comparison report
+- [ ] Unified comparison report across all 10 architectures
 - [ ] Grad-CAM explainability module
 - [ ] FastAPI inference API
 - [ ] Flutter mobile app
